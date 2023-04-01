@@ -1,21 +1,16 @@
-<script>
+<script lang="ts">
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
     import { create_map, node_distance, features, icon_sources } from '$/lib/map';
     import InfoPane from '$/components/InfoPane.svelte';
     import Layout from '$/routes/+layout.svelte';
     import { listen } from 'svelte/internal';
-
-    // html element of the map
-    let mapElement;
-    // map object
-    let map;
-    // selected place marker
-    let marker;
-    // displayed amenities
-    let amenities = [];
-    // displayed isochrone polygon
-    let polygon;
+    
+    let mapElement; // html element of the map
+    let map; // map object
+    let marker; // selected place marker
+    let amenities = []; // displayed amenities
+    let polygon; // displayed isochrone polygon
 
     // lat and lon can come from the URL, if provided
     export let selected_lat;
@@ -48,9 +43,11 @@
                 marker = L.marker([selected_lat, selected_lon]).addTo(map);
             }
             marker.setLatLng([selected_lat, selected_lon]);
+            
+            let amenity_filter = 'po,zs,ms,ps';
 
             let data = await (
-                await fetch(`/ludia?lat=${selected_lat}&lon=${selected_lon}`, { method: 'GET' })
+                await fetch(`/ludia?lat=${selected_lat}&lon=${selected_lon}&amenities=${amenity_filter}`, { method: 'GET' })
             ).json();
             for (let i in data.amenities) {
                 let a = L.marker([data.amenities[i].y, data.amenities[i].x], {
@@ -88,7 +85,8 @@
 
 <div class="map">
     <div class="main_map" bind:this={mapElement} />
-    <div class="sidebar" />
+    <div class="sidebar">
+    </div>
 </div>
 
 <style lang="scss">
