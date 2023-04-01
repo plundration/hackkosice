@@ -1,11 +1,8 @@
 const apiUrl = 'http://localhost:8080/ors/v2/isochrones';
 
-interface Point {
-    lat: number;
-    lon: number;
-}
+export type Point = { lat: number; lon: number; };
 
-type IsochroneType = 'driving-car' | 'foot-walking' | 'cycling-regular';
+export type IsochroneType = 'driving-car' | 'foot-walking' | 'cycling-regular';
 
 export async function getIsochrone(point: Point, type: IsochroneType, time: number): Promise<Point[]> {
     const url = `${apiUrl}/${type}`;
@@ -19,5 +16,5 @@ export async function getIsochrone(point: Point, type: IsochroneType, time: numb
 
     const json = await response.json();
 
-    return json.features[0].geometry.coordinates[0].map((pos: any) => [pos[1],pos[0]]);
+    return json.features[0].geometry.coordinates[0].map((pos: any) => [pos[1], pos[0]]);
 }

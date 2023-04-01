@@ -1,6 +1,10 @@
-import { getIsochrone } from '$lib/isochrone';
+import { getIsochrone, type IsochroneType, type Point } from '$lib/isochrone';
 import { json, type RequestHandler } from '@sveltejs/kit';
 
 export const GET: RequestHandler = async ({ request, url }) => {
-    return json(await getIsochrone({ lat: parseFloat(url.searchParams.get('lat') || ''), lon: parseFloat(url.searchParams.get('lon') || '') }, 'foot-walking', 900));
+    const lat = parseFloat(url.searchParams.get('lat') || '');
+    const lon = parseFloat(url.searchParams.get('lon') || '');
+    const type = (url.searchParams.get('type') || 'foot-walking') as IsochroneType;
+    const time = parseInt(url.searchParams.get('time') || '900');
+    return json(await getIsochrone({ lat, lon }, type, time));
 };
