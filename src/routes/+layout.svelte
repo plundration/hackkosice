@@ -10,8 +10,8 @@
 
     let links = [
         { name: 'Domov', href: '/' },
-        { name: 'Mapa', href: '/mapa' },
-        { name: 'Byty', href: '/byty' },
+        { name: 'Pre ľudí', href: '/ludia' },
+        { name: 'Pre firmy', href: '/firmy' },
     ];
 </script>
 

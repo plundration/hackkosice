@@ -7,10 +7,10 @@
     <div class="main-page-top">
         <div class="overlay">
             <div class="top-content">
-                <h1>Vybrať správne je kľučové</h1>
+                <h1>15-minútové Košice</h1>
                 <div class="main-page-button">
-                    <Button onClick={() => goto('/mapa')}>MAPA</Button>
-                    <Button onClick={() => goto('/byty')}>ZOZNAM</Button>
+                    <Button onClick={() => goto('/ludia')}>Pre ľudí</Button>
+                    <Button onClick={() => goto('/firmy')}>Pre firmy</Button>
                 </div>
             </div>
         </div>
@@ -18,15 +18,17 @@
 
     <div class="main-page-bottom">
         <div class="bottom-text">
-            <p>
-                Pomáhame vám s výberom <b>lacného a dostupného ubytovania</b> na
-                základe
-                <b>možností dopravy, vzdialenosti škôl, lekární a ambulancií.</b>
-            </p>
-            <p>
-                Používame voľne dostupné dáta a spracúvame ich do formy
-                prehľadnej mapy.
-            </p>
+            Pomocou voľne dostupných dát pomáhame
+            <div id="bottom-text-split">
+                <p id="ludia">
+                    Ľuďom nájsť <b>vhodné ubytovanie</b> na základe
+                    <b>možností dopravy, vzdialenosti škôl, lekární, ambulancií a viac.</b>
+                </p>
+                <p id="firmy">
+                    Firmám nájsť <b>nevyužité miesto</b>, kde ich daná služba chýba alebo nie je dostatočne prístupná.
+                </p>
+            </div>
+            týmto košice dostávame bližšie ku skutočnému <b>15-minútovému mestu</b>.
         </div>
     </div>
 </div>
@@ -113,5 +115,26 @@
             margin: 1em;
             text-align: center;
         }
+    }
+    
+    #bottom-text-split {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 0.5em;
+
+        margin: 1.5em 0;
+        
+        p {
+            padding: 1.0em;
+            border-radius: 0.5em;
+            color: $clr-light;
+        }
+        
+        #ludia { background-color: $clr-ludia; }
+        #firmy { background-color: $clr-firmy; }
+        
     }
 </style>
