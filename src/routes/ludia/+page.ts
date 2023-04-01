@@ -1,5 +1,5 @@
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = ({ url }) => {
-    return { id: url.searchParams.get('id') || '' };
+    return { lat: url.searchParams.get('lat') || '',  lon: url.searchParams.get('lon') || ''};
 };

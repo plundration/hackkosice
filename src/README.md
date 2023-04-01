@@ -1,5 +1,1 @@
-# BITY
-
-(haha chapete lebo to sú byty)
-
-Naše riešenia sa mali týkať sociálne a teda aj finančne znevýhodnených občanov, pre ktorých je cena veľmi dôležitým faktorom pri kúpe nehnuteľnosti. Často sa ale nedbá na to, že títo sociálne znevýhodnený obyvatelia majú aj mnohé špecifické požiadavky na prostredie a okolie nehnuteľnosti. Keď šetríte na kúpe domu, určite budete chcieť šetriť napríklad na doprave. Stáva sa často, že niektoré z týchto požiadavok sa ľahko prehliadnu. Spracovaním dát, ktoré sme dostali, s plánom pridať monoho iných druhov dát, sme zhotovili službu, ktorá by mohla zhromažďovaním a poskyotovaním dát pomôcť ako aj jednotlivcom, tak aj realitným firmám. Budete si pomocou nej môcť porovnať nehnuteľnosti (ktoré by v praxi samozrejme boli načítané zo skutočných zdrojov) na základe dostupnosti lekární, psíčkarských areálov, škôl, zastávok MHD, a mnoho iných faktorov.
+idk

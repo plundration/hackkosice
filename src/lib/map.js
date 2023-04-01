@@ -1,4 +1,4 @@
-import { distance } from '$/util';
+import { distance } from '$/lib/util';
 
 export function create_map(leaflet, mapElement, center) {
     let map = leaflet.map(mapElement).setView(center, 13);
@@ -40,3 +40,14 @@ export function node_distance(lat, lon, item) {
     let d = distance(lat, lon, coords[1], coords[0]);
     return Math.floor(d);
 }
+
+export let icons = {
+    bussin: { iconUrl: '/bussin.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    skola: { iconUrl: '/skola.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    skolka: { iconUrl: '/skolka.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    spital: { iconUrl: '/spital.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    dom: { iconUrl: '/dom.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    pes: { iconUrl: '/pes.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    velky_dom: { iconUrl: '/dom.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    apatieka: { iconUrl: '/apatieka.svg', iconSize: [40, 40], iconAnchor: [20, 20] }
+};

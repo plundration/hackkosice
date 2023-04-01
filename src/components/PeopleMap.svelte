@@ -1,14 +1,17 @@
 <script>
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
-    import { create_map, node_distance, features } from '$/map';
+    import { create_map, node_distance, features } from '$/lib/map';
     import InfoPane from '$/components/InfoPane.svelte';
 
+    // html element of the map
     let mapElement;
+    // map object
     let map;
-    let placeData = null;
-
-    export let selected_id;
+    
+    // lat and lon from URL
+    export let selected_lat;
+    export let selected_lon;
 
     onMount(async () => {
         if (!browser) return;
@@ -16,64 +19,10 @@
         let center = [48.72, 21.26];
         let map = create_map(L, mapElement, center);
 
-        let icons = {
-            bussin: '/bussin.svg',
-            skola: '/skola.svg',
-            skolka: '/skolka.svg',
-            spital: '/spital.svg',
-            dom: '/dom.svg'
-            pes: '/pes.svg',
-            velky_dom: '/dom.svg',
-            apatieka: '/apatieka.svg'
-        };
-        for (let i in icons) {
-            icons[i] = {iconUrl: i, iconSize: [40, 40], iconAnchor: [20, 20]};
+        console.log(selected_lat, selected_lon);
+        if (selected_lat && selected_lon) {
+            map.panTo([parseFloat(selected_lat), parseFloat(selected_lon)]);
         }
-
-        let markers = [];
-        let isoch;
-
-        async function update_isoch(id) {
-            const response = await fetch('/mapa/byty/isochrone', {
-                method: 'POST',
-                headers: {
-                    Accept: 'application/json',
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ id: id }),
-            });
-            const data = await response.json();
-            if (isoch) { isoch.remove(); }
-            console.log(data);
-            isoch = L.polygon(data.isochrone).addTo(map);
-        }
-
-        var point;
-
-        async function update_data(lat, lon, extra_data) {
-            let data = await (
-                await fetch(
-                    `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${lat}&lon=${lon}&accept-language=sk`
-                )
-            ).json();
-            map.flyTo([lat, lon], 15, {
-                animate: true,
-                duration: 0.5,
-            });
-            let name = data.display_name;
-            let [first, ...second] = name.split('-');
-            second = second.join('-');
-            if (point) {
-                point.remove();
-            }
-            point = L.marker([lat, lon], { icon: velky_dom }).addTo(map);
-
-            let veci = await features(lat, lon);
-            console.log(veci);
-
-            for (let i in markers) {
-                markers[i].remove();
-            }
     });
 
     onDestroy(async () => {
@@ -82,12 +31,12 @@
             map.remove();
         }
     });
+        //<InfoPane data={placeData} />
 </script>
 
 <div class="map">
     <div class="main_map" bind:this={mapElement} />
     <div class="sidebar">
-        <InfoPane data={placeData} />
     </div>
 </div>
 
