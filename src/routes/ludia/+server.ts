@@ -2,31 +2,29 @@ import { getIsochrone, type IsochroneType, type Point } from '$lib/isochrone';
 import { json, type RequestHandler } from '@sveltejs/kit';
 import { readFileSync } from 'fs';
 
-type AmenityType = { name: string, shortName: string, file: string };
-const amenityTypes: AmenityType[] = [
-    { name: 'Reštaurácia', shortName: 're', file: 'restauracia' },
-    { name: 'Kaviarňa', shortName: 'ka', file: 'kaviaren' },
-    { name: 'Krčma', shortName: 'kr', file: 'krcma' },
-    { name: 'Ambulancia', shortName: 'am', file: 'ambulancia' },
-    { name: 'Bar', shortName: 'ba', file: 'bar' },
-    { name: 'Detská ambulancia', shortName: 'da', file: 'detska_ambulancia' },
-    { name: 'Ihrisko', shortName: 'ih', file: 'ihrisko' },
-    { name: 'Drogéria', shortName: 'dr', file: 'drogeria' },
-    { name: 'Fastfood', shortName: 'ff', file: 'fastfood' },
-    { name: 'Gym', shortName: 'gy', file: 'gym' },
-    { name: 'Lekáreň', shortName: 'le', file: 'lekaren' },
-    { name: 'Pošta', shortName: 'po', file: 'posta' },
-    { name: 'Materská škola', shortName: 'ms', file: 'materska_skola' },
-    { name: 'Základná škola', shortName: 'zs', file: 'zakladna_skola' },
-    // { name: 'Stredná škola', shortName: 'ss', file: 'stredna_skola' }, // todo
-    // { name: 'Vysoká škola', shortName: 'vs', file: 'vysoka_skola' }, // todo
-    { name: 'Zastávka', shortName: 'za', file: 'zastavka' },
-    { name: 'Supermarket', shortName: 'su', file: 'supermarket' },
-    { name: 'Balíkobox', shortName: 'bb', file: 'balikobox' },
-    { name: 'Obchod', shortName: 'ob', file: 'obchod' },
-    { name: 'Psí výbeh', shortName: 'ps', file: 'psi_vybeh' },
-    { name: 'Zubár', shortName: 'zu', file: 'zubar' },
-];
+type AmenityType = { name: string, file: string };
+const amenityTypes: {[id: string]: AmenityType} = {
+    re: { name: 'Reštaurácia', file: 'restauracia' },
+    ka: { name: 'Kaviarňa', file: 'kaviaren' },
+    kr: { name: 'Krčma', file: 'krcma' },
+    am: { name: 'Ambulancia', file: 'ambulancia' },
+    ba: { name: 'Bar', file: 'bar' },
+    da: { name: 'Detská ambulancia', file: 'detska_ambulancia' },
+    ih: { name: 'Ihrisko', file: 'ihrisko' },
+    dr: { name: 'Drogéria', file: 'drogeria' },
+    ff: { name: 'Fastfood', file: 'fastfood' },
+    gy: { name: 'Gym', file: 'gym' },
+    le: { name: 'Lekáreň', file: 'lekaren' },
+    po: { name: 'Pošta', file: 'posta' },
+    ms: { name: 'Materská škola', file: 'materska_skola' },
+    zs: { name: 'Základná škola', file: 'zakladna_skola' },
+    za: { name: 'Zastávka', file: 'zastavka' },
+    su: { name: 'Supermarket', file: 'supermarket' },
+    bb: { name: 'Balíkobox', file: 'balikobox' },
+    ob: { name: 'Obchod', file: 'obchod' },
+    ps: { name: 'Psí výbeh', file: 'psi_vybeh' },
+    zu: { name: 'Zubár', file: 'zubar' },
+};
 
 export const GET: RequestHandler = async ({ request, url }) => {
     const lat = parseFloat(url.searchParams.get('lat') || '');
