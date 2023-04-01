@@ -59,7 +59,7 @@
             ).json();
             if (polygon) polygon.remove();
             console.log(poly);
-            polygon = L.polygon(poly.isochrone).addTo(map);
+            polygon = L.polygon(poly).addTo(map);
         }
 
         // select point on click
