@@ -41,7 +41,7 @@ export function node_distance(lat, lon, item) {
     return Math.floor(d);
 }
 
-export let icons = {
+export let icon_sources = {
     bussin: { iconUrl: '/bussin.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
     skola: { iconUrl: '/skola.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
     skolka: { iconUrl: '/skolka.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
@@ -49,5 +49,6 @@ export let icons = {
     dom: { iconUrl: '/dom.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
     pes: { iconUrl: '/pes.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
     velky_dom: { iconUrl: '/dom.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    apatieka: { iconUrl: '/apatieka.svg', iconSize: [40, 40], iconAnchor: [20, 20] }
+    apatieka: { iconUrl: '/apatieka.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    error: { iconUrl: '/error.png', iconSize: [40, 40], iconAnchor: [20, 20] }
 };

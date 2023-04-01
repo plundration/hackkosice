@@ -1,9 +1,11 @@
 <script>
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
-    import { create_map, node_distance, features, icons } from '$/lib/map';
+    import { create_map, node_distance, features, icon_sources } from '$/lib/map';
     import InfoPane from '$/components/InfoPane.svelte';
     import { POST } from '$/routes/ludia/amenities/+server';
+    import Layout from '$/routes/+layout.svelte';
+    import { listen } from 'svelte/internal';
 
     // html element of the map
     let mapElement;
@@ -26,6 +28,12 @@
         // initialize map
         let map = create_map(L, mapElement, [48.72, 21.26]);
 
+        // initialize icons
+        let icons = {};
+        for(let i in icon_sources) {
+            icons[i] = L.icon(icon_sources[i]);
+        }
+
         // if there is a place in the URL, display it
         if (selected_lat && selected_lon) run();
 
@@ -46,8 +54,8 @@
                 await fetch('/ludia/amenities', { method: 'POST' })
             ).json();
             for (let i in data) {
-                let a = L.marker([data[i].lat, data[i].lon], {
-                    icon: L.icon(icons[data[i].type]),
+                let a = L.marker([data[i].y, data[i].x], {
+                    icon: icons[data[i].typ_0] ? icons[data[i].typ_0] : icons.error,
                 })
                     .addTo(map)
                     .bindPopup(data[i].name);
