@@ -1,15 +1,15 @@
 const apiUrl = 'http://localhost:8080/ors/v2/isochrones';
 
 interface Point {
-    x: number;
-    y: number;
+    lat: number;
+    lon: number;
 }
 
 type IsochroneType = 'driving-car' | 'foot-walking' | 'cycling-regular';
 
 export async function getIsochrone(point: Point, type: IsochroneType, time: number): Promise<Point[]> {
     const url = `${apiUrl}/${type}`;
-    const request = { locations: [[point.x, point.y]], range: [time] };
+    const request = { locations: [[point.lon, point.lat]], range: [time] };
 
     const response = await fetch(url, {
         method: 'POST',
@@ -19,8 +19,5 @@ export async function getIsochrone(point: Point, type: IsochroneType, time: numb
 
     const json = await response.json();
 
-    // console.log(json);
-    // console.log(json.features[0].geometry.coordinates);
-
-    return json.features[0].geometry.coordinates[0].map((x) => [x[1],x[0]]);
+    return json.features[0].geometry.coordinates[0].map((pos: any) => [pos[1],pos[0]]);
 }
