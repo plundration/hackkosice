@@ -3,7 +3,6 @@
     import { browser } from '$app/environment';
     import { create_map, node_distance, features, icon_sources } from '$/lib/map';
     import InfoPane from '$/components/InfoPane.svelte';
-    import { POST } from '$/routes/ludia/amenities/+server';
     import Layout from '$/routes/+layout.svelte';
     import { listen } from 'svelte/internal';
 
@@ -51,23 +50,19 @@
             marker.setLatLng([selected_lat, selected_lon]);
 
             let data = await (
-                await fetch('/ludia/amenities', { method: 'POST' })
+                await fetch(`/ludia?lat=${selected_lat}&lon=${selected_lon}`, { method: 'GET' })
             ).json();
-            for (let i in data) {
-                let a = L.marker([data[i].y, data[i].x], {
-                    icon: icons[data[i].typ_0] ? icons[data[i].typ_0] : icons.error,
+            for (let i in data.amenities) {
+                let a = L.marker([data.amenities[i].y, data.amenities[i].x], {
+                    icon: icons[data.amenities[i].typ_0] ? icons[data.amenities[i].typ_0] : icons.error,
                 })
                     .addTo(map)
-                    .bindPopup(data[i].name);
+                    .bindPopup(data.amenities[i].name);
                 amenities.push(a);
             }
 
-            let poly = await (
-                await fetch(`/ludia/isochrone?lat=${selected_lat}&lon=${selected_lon}`, { method: 'GET' })
-            ).json();
             if (polygon) polygon.remove();
-            console.log(poly);
-            polygon = L.polygon(poly).addTo(map);
+            polygon = L.polygon(data.isochrone).addTo(map);
         }
 
         // select point on click
