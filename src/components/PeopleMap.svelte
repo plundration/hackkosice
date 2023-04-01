@@ -13,6 +13,8 @@
     let marker;
     // displayed amenities
     let amenities = [];
+    // displayed isochrone polygon
+    let polygon;
 
     // lat and lon can come from the URL, if provided
     export let selected_lat;
@@ -40,13 +42,24 @@
             }
             marker.setLatLng([selected_lat, selected_lon]);
 
-            let data = await (await fetch("/ludia/amenities", {method: "POST"})).json();
-            for(let i in data) {
-                let a = L.marker([data[i].lat, data[i].lon], {icon: L.icon(icons[data[i].type])}).addTo(map).bindPopup(data[i].name);
+            let data = await (
+                await fetch('/ludia/amenities', { method: 'POST' })
+            ).json();
+            for (let i in data) {
+                let a = L.marker([data[i].lat, data[i].lon], {
+                    icon: L.icon(icons[data[i].type]),
+                })
+                    .addTo(map)
+                    .bindPopup(data[i].name);
                 amenities.push(a);
             }
 
-            // let poly = await (await fetch("/ludia/isochrone", {method: "POST", body: JSON.stringify({})}))
+            let poly = await (
+                await fetch(`/ludia/isochrone?lat=${selected_lat}&lon=${selected_lon}`, { method: 'GET' })
+            ).json();
+            if (polygon) polygon.remove();
+            console.log(poly);
+            polygon = L.polygon(poly.isochrone).addTo(map);
         }
 
         // select point on click
