@@ -1,27 +1,13 @@
-<script>
-    export let data;
+<script lang="ts">
+    export let amenityData;
 </script>
 
 <div class="info-pane">
-    {#if data}
-        <h1>{data.name1}</h1>
-        <h2>{data.name2}</h2>
-        <p>{data.name3}</p>
-        {#each data.properties as prop}
-            {#await prop}
-                <div class="property">Načítavam...</div>
-            {:then value}
-                <div class="property {value.color}">
-                    <div class="property-key">
-                        {value.key}
-                    </div>
-                    <div class="property-value">
-                        {value.value}
-                    </div>
-                </div>
-            {:catch error}
-                Nastala chyba
-            {/await}
+    {#if amenityData}
+        {#each amenityData as amenity}
+            <div>
+                {amenity.name}
+            </div>
         {/each}
     {:else}
         <h1>Vyberte miesto</h1>
