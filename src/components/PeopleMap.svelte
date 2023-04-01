@@ -1,28 +1,60 @@
 <script>
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
-    import { create_map, node_distance, features } from '$/lib/map';
+    import { create_map, node_distance, features, icons } from '$/lib/map';
     import InfoPane from '$/components/InfoPane.svelte';
+    import { POST } from '$/routes/ludia/amenities/+server';
 
     // html element of the map
     let mapElement;
     // map object
     let map;
-    
-    // lat and lon from URL
+    // selected place marker
+    let marker;
+    // displayed amenities
+    let amenities = [];
+
+    // lat and lon can come from the URL, if provided
     export let selected_lat;
     export let selected_lon;
 
     onMount(async () => {
         if (!browser) return;
 
-        let center = [48.72, 21.26];
-        let map = create_map(L, mapElement, center);
+        // initialize map
+        let map = create_map(L, mapElement, [48.72, 21.26]);
 
-        console.log(selected_lat, selected_lon);
-        if (selected_lat && selected_lon) {
-            map.panTo([parseFloat(selected_lat), parseFloat(selected_lon)]);
+        // if there is a place in the URL, display it
+        if (selected_lat && selected_lon) run();
+
+        // display information about the selected point on the map
+        async function run() {
+            // remove all existing amenities
+            for (let i in amenities) {
+                amenities[i].remove();
+            }
+            amenities = [];
+            map.panTo([selected_lat, selected_lon]);
+            if (!marker) {
+                marker = L.marker([selected_lat, selected_lon]).addTo(map);
+            }
+            marker.setLatLng([selected_lat, selected_lon]);
+
+            let data = await (await fetch("/ludia/amenities", {method: "POST"})).json();
+            for(let i in data) {
+                let a = L.marker([data[i].lat, data[i].lon], {icon: L.icon(icons[data[i].type])}).addTo(map).bindPopup(data[i].name);
+                amenities.push(a);
+            }
+
+            // let poly = await (await fetch("/ludia/isochrone", {method: "POST", body: JSON.stringify({})}))
         }
+
+        // select point on click
+        map.on('click', e => {
+            selected_lat = e.latlng.lat;
+            selected_lon = e.latlng.lng;
+            run();
+        });
     });
 
     onDestroy(async () => {
@@ -31,13 +63,12 @@
             map.remove();
         }
     });
-        //<InfoPane data={placeData} />
+    //<InfoPane data={placeData} />
 </script>
 
 <div class="map">
     <div class="main_map" bind:this={mapElement} />
-    <div class="sidebar">
-    </div>
+    <div class="sidebar" />
 </div>
 
 <style lang="scss">
