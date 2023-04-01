@@ -9,7 +9,7 @@ type IsochroneType = 'driving-car' | 'foot-walking' | 'cycling-regular';
 
 export async function getIsochrone(point: Point, type: IsochroneType, time: number): Promise<Point[]> {
     const url = `${apiUrl}/${type}`;
-    const request = { locations: [[point.x, point.y]], range: [time] };
+    const request = { locations: [[point.y, point.x]], range: [time] };
 
     const response = await fetch(url, {
         method: 'POST',
@@ -17,7 +17,10 @@ export async function getIsochrone(point: Point, type: IsochroneType, time: numb
         body: JSON.stringify(request)
     });
 
-    console.log(await response.json());
+    const json = await response.json();
 
-    return [];
+    console.log(json);
+    console.log(json.features[0].geometry.coordinates);
+
+    return json.features[0].geometry.coordinates;
 }
