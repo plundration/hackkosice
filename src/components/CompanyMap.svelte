@@ -18,11 +18,6 @@
     onMount(async () => {
         if (!browser) return;
 
-        var testData = {
-          max: 8,
-          data: [{y: 48.7, x: 21.2, value: 8},{y: 48.8, x:21.2, value: 1}]
-        };
-
         var baseLayer = L.tileLayer(
         'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
             attribution: '...',
@@ -33,14 +28,14 @@
         var cfg = {
             // radius should be small ONLY if scaleRadius is true (or small radius is intended)
             // if scaleRadius is false it will be the constant radius used in pixels
-            "radius": 200,
+            "radius": 0.01,
             "maxOpacity": .7,
             // scales the radius based on map zoom
-            "scaleRadius": false,
+            "scaleRadius": true,
             // if set to false the heatmap uses the global maximum for colorization
             // if activated: uses the data maximum within the current map boundaries
             //   (there will always be a red spot with useLocalExtremas true)
-            "useLocalExtrema": true,
+            "useLocalExtrema": false,
             // which field name in your data represents the latitude - default "lat"
             latField: 'y',
             // which field name in your data represents the longitude - default "lng"
@@ -67,12 +62,17 @@
             .addTo(map);
         
         heatmapLayer.addTo(map);
-
-        // initialize icons
-        let icons = {};
-        for (let i in icon_sources) {
-            icons[i] = L.icon(icon_sources[i]);
+        
+        let resp = await (await fetch("/firmy")).json();
+        console.log(resp);
+        let data = [];
+        for (let y in resp) {
+            for (let x in resp[y]) {
+                console.log(y, x);
+                data.push({x: 21.1 + x * 0.01, y: 48.5 + y * 0.01, value: resp[y][x]});
+            }
         }
+        heatmapLayer.setData({max: 10000, data: data});
 
     });
 
