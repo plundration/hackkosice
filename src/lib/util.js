@@ -12,6 +12,5 @@ export function is_in_polygon(point, polygon) {
             count++;
         }
     }
-    console.log(count);
     return count % 2 != 0;
 }
