@@ -17,6 +17,7 @@
     let marker; // selected place marker
     let amenities = []; // displayed amenities
     let polygon; // displayed isochrone polygon
+    let amenityData = [];
 
     // lat and lon can come from the URL, if provided
     export let selected_lat;
@@ -61,6 +62,8 @@
 
             // list of amenities that are far away
             let far = [];
+            
+            amenityData = data.amenities;
             
             // parse all amenities
             for (let i in data.amenities) {
@@ -111,12 +114,12 @@
             map.remove();
         }
     });
-    //<InfoPane data={placeData} />
 </script>
 
 <div class="map">
     <div class="main_map" bind:this={mapElement} />
     <div class="sidebar">
+        <InfoPane {amenityData}/>
     </div>
 </div>
 
