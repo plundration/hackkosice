@@ -10,16 +10,17 @@ export const GET: RequestHandler = async ({ request, url }) => {
     let closest = {};
 
     for (let i in amenities) {
-        if(closest[amenities[i].type]) {
-            
+        let t = amenities[i].type;
+        if(closest[t]) {
         } else {
-            closest[amenities[i].type] = amenities[i];
-            closest[amenities[i].type].distace_
+            closest[t] = amenities[i];
+            closest[t].dist = 0.5 * (closest[t].x - lon)**2 + (closest[t].y - lat)**2;
         }
+        l
     }
 
     return json({
-        isochrone: await getIsochrone({ lat: lat, lon: lon }, 'foot-walking', 900),
+        isochrone: await getIsochrone({ lat, lon }, 'foot-walking', 900),
         amenities: amenities
     });
 };
