@@ -72,6 +72,10 @@
 
         // select point on click
         map.on('click', e => {
+            if (e.latlng.lat < 48.65 || e.latlng.lng > 21.35 || e.latlng.lat > 48.77 || e.latlng.lng < 21.17 ) {
+                alert("Mapa funguje iba v oblasti košíc!");
+                return;
+            }
             selected_lat = e.latlng.lat;
             selected_lon = e.latlng.lng;
             run();
