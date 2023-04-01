@@ -24,6 +24,7 @@ export const GET: RequestHandler = async ({ request, url }) => {
 
     let final_list = [];
     for (let i in closest) {
+        closest[i].distance = Math.sqrt(closest[i].dist) * 111111;
         final_list.push(closest[i]);
     }
 

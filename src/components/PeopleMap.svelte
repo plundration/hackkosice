@@ -1,10 +1,16 @@
 <script>
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
-    import { create_map, node_distance, features, icon_sources } from '$/lib/map';
+    import {
+        create_map,
+        node_distance,
+        features,
+        icon_sources,
+    } from '$/lib/map';
     import InfoPane from '$/components/InfoPane.svelte';
     import Layout from '$/routes/+layout.svelte';
     import { listen } from 'svelte/internal';
+    import {is_in_polygon} from '$/lib/util';
 
     // html element of the map
     let mapElement;
@@ -29,7 +35,7 @@
 
         // initialize icons
         let icons = {};
-        for(let i in icon_sources) {
+        for (let i in icon_sources) {
             icons[i] = L.icon(icon_sources[i]);
         }
 
@@ -49,26 +55,51 @@
             }
             marker.setLatLng([selected_lat, selected_lon]);
 
+            // fetch data about location
             let data = await (
-                await fetch(`/ludia?lat=${selected_lat}&lon=${selected_lon}`, { method: 'GET' })
+                await fetch(`/ludia?lat=${selected_lat}&lon=${selected_lon}`, {
+                    method: 'GET',
+                })
             ).json();
+
+            // list of amenities that are far away
+            let far = [];
+            
+            // parse all amenities
             for (let i in data.amenities) {
+                // create a marker
                 let a = L.marker([data.amenities[i].y, data.amenities[i].x], {
-                    icon: icons[data.amenities[i].typ_0] ? icons[data.amenities[i].typ_0] : icons.error,
+                    icon: icons[data.amenities[i].typ_0]
+                        ? icons[data.amenities[i].typ_0]
+                        : icons.error,
                 })
                     .addTo(map)
                     .bindPopup(data.amenities[i].name);
+                // add marker to list
                 amenities.push(a);
+                // if the amenity is not in reach, add it to the list of far amenities
+                if (!is_in_polygon([data.amenities[i].y, data.amenities[i].x], data.isochrone)) {
+                    far.push(data.amenities[i]);
+                }
             }
 
+            console.log(far);
+
+            // reset isochrone polygon
             if (polygon) polygon.remove();
+            // create new isochrone polygon
             polygon = L.polygon(data.isochrone).addTo(map);
         }
 
         // select point on click
         map.on('click', e => {
-            if (e.latlng.lat < 48.65 || e.latlng.lng > 21.35 || e.latlng.lat > 48.77 || e.latlng.lng < 21.17 ) {
-                alert("Mapa funguje iba v oblasti košíc!");
+            if (
+                e.latlng.lat < 48.65 ||
+                e.latlng.lng > 21.35 ||
+                e.latlng.lat > 48.77 ||
+                e.latlng.lng < 21.17
+            ) {
+                alert('Mapa funguje iba v oblasti košíc!');
                 return;
             }
             selected_lat = e.latlng.lat;
