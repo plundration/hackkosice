@@ -1,0 +1,1312 @@
+[
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Fedorová, Košice-Juh, (SebiDent s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Antošová, Košice-Juh, (HUGODENT, s. r. o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Viera Arendárčiková, Košice-Západ, (MUDr. Viera Arendárčiková)",
+        "x": "21.2218523",
+        "y": "48.7088278"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Eleonóra Babíková, Košice-Juh, (ELDA Dent s.r.o.)",
+        "x": "21.2599108",
+        "y": "48.7155408"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr.Božena Badlíková, Košice-Dargov.hrdinov, (MUDr. Božena Badlíková)",
+        "x": "21.2852275",
+        "y": "48.7315797"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Vladimír Balažič, CSc., Košice-Staré Mesto, (Ambulancia TYRKYS s.r.o.)",
+        "x": "21.2548799",
+        "y": "48.7195278"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Mihály Répasi, Košice-Staré Mesto, (HAPPYDENT, s. r. o.)",
+        "x": "21.2649046",
+        "y": "48.7184194"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Magdaléna Bodáková, Košice-Staré Mesto, (Dental - Prim Plus s. r. o.)",
+        "x": "21.2573005",
+        "y": "48.7200676"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Rastislav Boroš, Košice-Západ, (BorgiDent s. r. o.)",
+        "x": "21.2241475",
+        "y": "48.7112039"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Oľga Borošová, Košice-Západ, (BorgiDent s. r. o.)",
+        "x": "21.2325557",
+        "y": "48.6988397"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Štefánia Zupková, Košice-Staré Mesto, (ZUPKO dental center s.r.o.)",
+        "x": "21.2434606",
+        "y": "48.7249693"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Lenka Budziňáková, Košice-Západ, (QUALIDENT, s.r.o.)",
+        "x": "21.2411626",
+        "y": "48.70765"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Anna Cifráková, Košice-Západ, (AC DENTAL s.r.o.)",
+        "x": "21.2328135",
+        "y": "48.7102261"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Štefan Cuľba, Košice-Juh, (DENTAL CLINIC GOLD s.r.o.)",
+        "x": "21.267924",
+        "y": "48.717751"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Radoslava Cuľbová, Košice-Juh, (M&K dent spol. s.r.o.)",
+        "x": "21.2598635",
+        "y": "48.7078539"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Adriana Čečetková, PhD., Košice-Juh, (Endo-Dent s.r.o.)",
+        "x": "21.2605221",
+        "y": "48.7071672"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Marta Kyjovská Čičváková, Košice-Dargov.hrdinov, (MartiDent s.r.o.)",
+        "x": "21.2824586",
+        "y": "48.7395041"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Gabriela Čisláková, Košice-Juh, (NUMERO-DENT s. r. o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Iveta Čižmáriková, Košice-Nad jazerom, (MUDr. Iveta Čižmáriková)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Beáta Deiml, Košice-Západ, (Diamondsmile s.r.o.)",
+        "x": "21.2354758",
+        "y": "48.6975186"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Yury Demidov, Košice-Staré Mesto, (VLADE s. r. o.)",
+        "x": "21.2536345",
+        "y": "48.7232423"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Erich Dráb, Košice-Šaca, (MUDr. Erich Dráb)",
+        "x": "21.1728885",
+        "y": "48.6367051"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Kalid El-Momany, Košice-Staré Mesto, (MOMANY DENT, s. r. o.)",
+        "x": "21.2594027",
+        "y": "48.7217065"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (TREDENT s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Mária Eötvösová, Košice-Juh, (TREDENT s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Sever, (NEODENT s. r. o.)",
+        "x": "21.2404772",
+        "y": "48.7298319"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Beáta Futóová, Košice-Sídl.Ťahanovce, (FUDENTO s.r.o.)",
+        "x": "21.2674997",
+        "y": "48.7549773"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Zdenka Lučivjanská, Košice-Juh, (G-Dentistry s.r.o.)",
+        "x": "21.2682463",
+        "y": "48.716418"
+    },
+    {
+        "name": "Zubná ambulancia - OMNIDENT, Košice-Sídl.Ťahanovce, (OMNIDENT J&J s.r.o.)",
+        "x": "21.2674997",
+        "y": "48.7549773"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Milena Gidová, Košice-Západ, (PERFECT SMILE s.r.o.)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Gramatová, Košice-Krásna, (GRADENT, s. r. o.)",
+        "x": "21.3138544",
+        "y": "48.6700839"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Adriana Grančičová, Košice-Sever, (STOMATEL, s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Marta Bodnárová, Košice-Juh, (HEJJDENT s.r.o.)",
+        "x": "21.2538151",
+        "y": "48.7150273"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marek Hoffmann, Košice-Západ, (ABM DENT s. r. o.)",
+        "x": "21.2308449",
+        "y": "48.7196029"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Simona Adamec Vaššová, Košice-Juh, (OCEAN DENT s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Viera Horváthová, Košice-Staré Mesto, (VHDENT, spol. s r.o.)",
+        "x": "21.2513245",
+        "y": "48.7290876"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Janka Hrehorová, Košice-Staré Mesto, (KOLDENT s.r.o.)",
+        "x": "21.2532921",
+        "y": "48.7236815"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jolana Hrušovská, Košice-Dargov.hrdinov, (MUDr. Jolana Hrušovská)",
+        "x": "21.2819216",
+        "y": "48.7441499"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marta Chlebanová, Košice-Juh, (MEDIDENTAL, s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Mária Chovanová, Košice-Sídlisko KVP, (OTODENT PLUS s.r.o.)",
+        "x": "21.2160937",
+        "y": "48.7147646"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Silvia Labusová, Košice-Západ, (JARUSH-DENT, s.r.o.)",
+        "x": "21.227779",
+        "y": "48.7150154"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Zdenka Lučivjanská, Košice-Západ (MA-Dent s.r.o), Košice-Západ, (MA - Dent s.r.o.)",
+        "x": "21.2409675",
+        "y": "48.7099449"
+    },
+    {
+        "name": "DDDental s. r. o., Košice-Juh, (DDDental s. r. o.)",
+        "x": "21.2538975",
+        "y": "48.7141028"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Kočíková, Košice-Juh, (VIVAdent s.r.o.)",
+        "x": "21.2560146",
+        "y": "48.7153595"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Viera Jenčová, PhD., Košice-Staré Mesto, (V.J. - DENTAL s.r.o.)",
+        "x": "21.2530113",
+        "y": "48.7193269"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Igor Jutka, Košice-Staré Mesto, (Pedo Dent s.r.o.)",
+        "x": "21.2532506",
+        "y": "48.7239318"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ingrid Jutková, Košice-Staré Mesto, (Pedo Dent s.r.o.)",
+        "x": "21.2532506",
+        "y": "48.7239318"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Lýdia Jutková, Košice-Západ, (JULYDENT, spol. s r.o.)",
+        "x": "21.2391856",
+        "y": "48.7128746"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Sever, (Mary Dent s.r.o.)",
+        "x": "21.2460726",
+        "y": "48.735179"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marína Kačmárová, Košice-Západ, (MUDr. Marína Kačmárová)",
+        "x": "21.238876",
+        "y": "48.7133442"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Slavomíra Ondrejčová, Košice-Západ, (KALLADENT s.r.o.)",
+        "x": "21.2391856",
+        "y": "48.7128746"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jana Kardosová, Košice-Juh, (Stomatologická ambulancia, s.r.o.)",
+        "x": "21.2622645",
+        "y": "48.6956699"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (MUDr. Richard Kastély)",
+        "x": "21.2620649",
+        "y": "48.7120216"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Stanislav Kaščák, Košice-Staré Mesto, (MUDr. Stanislav Kaščák)",
+        "x": "21.2550582",
+        "y": "48.722367"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Anna Mihaľová, Košice-Sever, (ElegantSmile s. r. o.)",
+        "x": "21.2404772",
+        "y": "48.7298319"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Šarudiová, Košice-Sever, (zubne.studio s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Klohnová, Košice-Staré Mesto, (MediDent, s. r. o.)",
+        "x": "21.2580659",
+        "y": "48.7173327"
+    },
+    {
+        "name": "Súkromná zubná ambulancia, Košice-Sídl.Ťahanovce, (TEAMTEC s. r. o.)",
+        "x": "21.2674997",
+        "y": "48.7549773"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Iveta Komorášová, Košice-Sever, (Komodent s. r. o.)",
+        "x": "21.2448416",
+        "y": "48.7444794"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Martina Kopčáková, Košice-Staré Mesto, (DENTOMAX s. r. o.)",
+        "x": "21.2446235",
+        "y": "48.7219133"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Igor Kopsa, Košice-Západ, (LAGODENT s.r.o.)",
+        "x": "21.2354025",
+        "y": "48.7215063"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Milan Kotráň, Košice-Staré Mesto, (MIKO - DENT s.r.o.)",
+        "x": "21.2550582",
+        "y": "48.722367"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Lucia Kovácsová, PhD., Košice-Nad jazerom, (LT Dent s.r.o.)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Andrea Král, Košice-Staré Mesto, (AK. Stomatológia, s. r. o.)",
+        "x": "21.2527234",
+        "y": "48.7197429"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDR. Patrik Kováčik, Košice-Šaca, (Santa Apollonia s. r. o.)",
+        "x": "21.1729654",
+        "y": "48.6363598"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr.Martin Kráľovský, Košice-Staré Mesto, (MUDr. Martin Kráľovský)",
+        "x": "21.2671217",
+        "y": "48.7232068"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Eva Krivdová, Košice-Staré Mesto, (AKA Dent s.r.o.)",
+        "x": "21.2563227",
+        "y": "48.723036"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Silvia Křemenová, Košice-Sídlisko KVP, (MUDr. Silvia Křemenová)",
+        "x": "21.2160937",
+        "y": "48.7147646"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ján Kučera, Košice-Juh, (STONEK s.r.o.)",
+        "x": "21.2682463",
+        "y": "48.716418"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Dáša Kuchárska, Košice-Sever, (MUDr. Dáša Kuchárska)",
+        "x": "21.2608923",
+        "y": "48.7334043"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Erika Kupcová, Košice-Juh, (Duo - DENT s. r. o.)",
+        "x": "21.251049",
+        "y": "48.7138302"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Vojtech Kuzma, Košice-Sever, (Dental Care Košice, s. r. o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Alica Kvartová, Košice-Staré Mesto, (KVARTDENT s.r.o.)",
+        "x": "21.2584999",
+        "y": "48.7231894"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Peter Ladányi, Košice-Západ, (MUDr. Peter Ladányi)",
+        "x": "21.2411626",
+        "y": "48.70765"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Mária Lecová, Košice-Sever, (ANMADENT s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ľubica Ledecká, Košice-Krásna, (MUDr. Ľubica Ledecká)",
+        "x": "21.3192039",
+        "y": "48.671261"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Dagmar Ledecká, Košice-Staré Mesto, (ZUBKY s. r. o.)",
+        "x": "21.2440762",
+        "y": "48.7239418"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ladislav Lukáč, Košice-Staré Mesto, (LUKACDENT s.r.o.)",
+        "x": "21.2622222",
+        "y": "48.7188282"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Lukáčová, Košice-Staré Mesto, (MUDr. Katarína Lukáčová)",
+        "x": "21.2622222",
+        "y": "48.7188282"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Radoslav Bohuš, Košice-Západ, (DENTSTAR, s.r.o.)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Miloš Melicher, Košice-Dargov.hrdinov, (MMM dent, s.r.o.)",
+        "x": "21.2824586",
+        "y": "48.7395041"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Maršalová, Košice-Sever, (BELDENT s.r.o.)",
+        "x": "21.2404772",
+        "y": "48.7298319"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Helena Masaryková, Košice-Západ, (MUDr. Helena Masaryková)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Alexander Medzihradský, Košice-Dargov.hrdinov, (Alexia creative, s.r.o.)",
+        "x": "21.2788542",
+        "y": "48.7424342"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Maroš Mechír, Košice-Západ, (PLUSDENTA s.r.o.)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marianna Michalková, Košice-Juh, (RIA DENT, s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Paulína Minčíková, Košice-Sever, (AZ DENT s.r.o.)",
+        "x": "21.2460726",
+        "y": "48.735179"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Juraj Miňo, Košice-Juh, (MI-DENT s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Nikola MItrová PhD., Košice-Dargov.hrdinov, (MUDr. Nikola Mitrová, PhD.)",
+        "x": "21.2788639",
+        "y": "48.7410212"
+    },
+    {
+        "name": "MUDr.Beáta Müllerová, BBdent, Košice-Západ, (MUDr. Beáta Müllerová)",
+        "x": "21.244827",
+        "y": "48.708054"
+    },
+    {
+        "name": "RoyalDent, Košice-Myslava, (LUMY DENT s.r.o.)",
+        "x": "21.1956269",
+        "y": "48.71444"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Martina Petöczová, Košice-Sever, (Profi Dental, s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr.Martina Plichtová, Košice-Juh, (ANNA DENT s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Miroslava Nagyová, Košice-Juh, (CAMPI HEALTHCARE SERVICES, s. r. o.)",
+        "x": "21.2676722",
+        "y": "48.7168017"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Nárožná, Košice-Staré Mesto, (kn-DENT, s.r.o.)",
+        "x": "21.2584999",
+        "y": "48.7231894"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Nemcová, Košice-Staré Mesto, (NEMCOVÁ & REXA ml. spol. s r. o.)",
+        "x": "21.2601239",
+        "y": "48.7259954"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Miloš Nevický, Košice-Sever, (NewDent, s. r. o.)",
+        "x": "21.2404772",
+        "y": "48.7298319"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Slavomír Novický, Košice-Sever, (RIDENS s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Rudolf Novotný, Košice-Juh, (MUDr. Rudolf Novotný)",
+        "x": "21.2637447",
+        "y": "48.7169903"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Igor Ocelák, Košice-Západ, (MUDr. Veronika Oceláková s. r. o.)",
+        "x": "21.2319079",
+        "y": "48.7057303"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Veronika Oceláková, Košice-Západ, (MUDr. Veronika Oceláková s. r. o.)",
+        "x": "21.2319079",
+        "y": "48.7057303"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ján Ohlas, Košice-Juh, (OHLASDENT s. r. o.)",
+        "x": "21.2682463",
+        "y": "48.716418"
+    },
+    {
+        "name": "Ono-dent s.r.o., Košice-Sever, (ono-dent s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Michal Orenčák, PhD., Košice-Staré Mesto, (EDADENT s.r.o.)",
+        "x": "21.2532921",
+        "y": "48.7236815"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Želmíra Orenčáková, Košice-Staré Mesto, (ZELDENT s.r.o.)",
+        "x": "21.2532921",
+        "y": "48.7236815"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Andrea Pallas, Košice-Staré Mesto, (DENTAL MEDICINE s.r.o.)",
+        "x": "21.2532418",
+        "y": "48.7242703"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Eugénia Pastíriková, Košice-Staré Mesto, (MUDr. Eugénia Pastíriková)",
+        "x": "21.2491682",
+        "y": "48.7216676"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Juliána Göbl, Košice-Sever, (DENTINKA s. r. o.)",
+        "x": "21.2468199",
+        "y": "48.7338191"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Helena Pejčevová, Košice-Sídlisko KVP, (HVP-DENT, s.r.o.)",
+        "x": "21.2163068",
+        "y": "48.7077878"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Silvia Perešová, Košice-Staré Mesto, (SPDENT s.r.o.)",
+        "x": "21.2534703",
+        "y": "48.7281187"
+    },
+    {
+        "name": "HOLLYWOOD SMILE s.r.o., Košice-Juh, (HOLLYWOOD SMILE s.r.o.)",
+        "x": "21.2682463",
+        "y": "48.716418"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Pavliková Bimbová, Košice-Nad jazerom, (MULTIPLA, s.r.o.)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Petra Sasáková, Košice-Juh, (JP Denta s.r.o.)",
+        "x": "21.2651856",
+        "y": "48.7175079"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jarmila Pírová, Košice-Sever, (JAMAS Dent s.r.o.)",
+        "x": "21.240912",
+        "y": "48.7388171"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Martina Pobehová, Košice-Nad jazerom, (VEDENT s. r. o.)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Gyorgyi Pórová, Košice-Dargov.hrdinov, (PORDENT, s.r.o.)",
+        "x": "21.2822852",
+        "y": "48.7424667"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ľubica Onufráková, Košice-Sídlisko KVP, (Dr. PROKI, s. r. o.)",
+        "x": "21.2160937",
+        "y": "48.7147646"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Stanislava Puškášová, Košice-Staré Mesto, (Prokydent s.r.o.)",
+        "x": "21.2466948",
+        "y": "48.7188213"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Kristína Katonová, Košice-Sídlisko KVP, (ISTAR, spol. s r.o. Košice)",
+        "x": "21.2160937",
+        "y": "48.7147646"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Daniela Rehová, Košice-Sever, (MUDr. Daniela Rehová)",
+        "x": "21.2474044",
+        "y": "48.7377392"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Alena Rerková, Košice-Západ, (RASTOMA s. r. o.)",
+        "x": "21.2293595",
+        "y": "48.7183932"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ivan Rexa, Košice-Staré Mesto, (MUDr. Ivan Rexa)",
+        "x": "21.2444096",
+        "y": "48.7277761"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Slavka Rostášová, Košice-Juh, (HR Dent, s. r. o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ivica Rozprávková, Košice-Staré Mesto, (MUDr. Ivica Rozprávková)",
+        "x": "21.2530113",
+        "y": "48.7193269"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jozef Sakmár, Košice-Sídlisko KVP, (MUDr. Jozef Sakmár)",
+        "x": "21.2160937",
+        "y": "48.7147646"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Tatiana Schneiderová, Košice-Staré Mesto, (TATIANA DENT, s. r. o.)",
+        "x": "21.2588408",
+        "y": "48.7230228"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Sídl.Ťahanovce, (SCHWARTZDENT s. r. o.)",
+        "x": "21.2705818",
+        "y": "48.756562"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Ján Kolesár, Košice-Západ, (S - Denta s.r.o.)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Michal Sitko, Košice-Sever, (MUDr. Michal Sitko)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Teofil Bolerázsky, Košice-Západ, (DUTY - DENT, spol. s r. o.)",
+        "x": "21.2309443",
+        "y": "48.7135613"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ján Slovenský, Košice-Staré Mesto, (MUDr. Ján Slovenský)",
+        "x": "21.2508544",
+        "y": "48.7179647"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Slavomír Solej, Košice-Staré Mesto, (SolejDent, s.r.o.)",
+        "x": "21.2533255",
+        "y": "48.7244808"
+    },
+    {
+        "name": "STADENT s.r.o., Košice-Sever, (STADENT s.r.o.)",
+        "x": "21.2404772",
+        "y": "48.7298319"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Andrea Ferencová, Košice-Staré Mesto, (SUDENT s. r. o.)",
+        "x": "21.2550582",
+        "y": "48.722367"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Peter Svoboda, Košice-Staré Mesto, (MUDr. Peter Svoboda)",
+        "x": "21.250076",
+        "y": "48.726817"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Andrea Svobodová, Košice-Západ, (MUDr. Andrea Svobodová)",
+        "x": "21.2406623",
+        "y": "48.7056735"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Darina Ščavnická, Košice-Juh, (MUDr. Darina Ščavnická, s. r. o.)",
+        "x": "21.260539",
+        "y": "48.7162759"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Lévay, Košice-Juh, (ZU - DENT s.r.o.)",
+        "x": "21.2682463",
+        "y": "48.716418"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Agáta Škultétyová, Košice-Západ, (MV dent, s. r. o.)",
+        "x": "21.2391856",
+        "y": "48.7128746"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Sever, (BeTiDent s.r.o.)",
+        "x": "21.2387318",
+        "y": "48.7303963"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Jana Vinicayová, Košice-Barca, (EGA-STOMA s.r.o.)",
+        "x": "21.2613962",
+        "y": "48.6825759"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Sever, (DENTICIO s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Priska takácsová, Košice-Nad jazerom, (Priska Hela Dent, s. r. o.)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Margaréta Tamášová, Košice-Staré Mesto, (MUDr. Tamášová Margaréta,, PhD.)",
+        "x": "21.2530113",
+        "y": "48.7193269"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr.Darina Tarasseková, Košice-Sídl.Ťahanovce, (PREMOLAR s.r.o.)",
+        "x": "21.2674997",
+        "y": "48.7549773"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marek Prokopovič, Košice-Západ, (Kapadent s.r.o.)",
+        "x": "21.222397",
+        "y": "48.7059889"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Tomáš Teššer, Košice-Juh, (DENTE s. r. o.)",
+        "x": "21.2567584",
+        "y": "48.7126535"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ivan Timkanič, Košice-Juh, (TIMDENT s.r.o.)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr.Sabína Pavličková, Košice-Staré Mesto, (Periodental s r.o.)",
+        "x": "21.2530113",
+        "y": "48.7193269"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Dušan Truben, Košice-Sídl.Ťahanovce, (MUDr. Dušan Truben)",
+        "x": "21.2662035",
+        "y": "48.7579405"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Dagmar Trubenová, Košice-Sídl.Ťahanovce, (DT ORTHODONTICS, s. r. o.)",
+        "x": "21.2674997",
+        "y": "48.7549773"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Stanislav Tudaj, Košice-Juh, (REFIX, s. r. o.)",
+        "x": "21.2580351",
+        "y": "48.7136121"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jaroslav Ukropec, Košice-Juh, (MUDr. Jaroslav Ukropec)",
+        "x": "21.2576085",
+        "y": "48.7070256"
+    },
+    {
+        "name": "Mint Dental, Košice-Juh, (Mint Dental, s.r.o.)",
+        "x": "21.2527204",
+        "y": "48.7007052"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Veronika Urdová, Košice-Západ, (Ver Dent s.r.o.)",
+        "x": "21.2391856",
+        "y": "48.7128746"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Aneta Veme, Košice-Sever, (FIANTI, s.r.o.)",
+        "x": "21.2528339",
+        "y": "48.7396655"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Veselinyová, Košice-Staré Mesto, (MUDr. Veselinyová Zuzana,, PhD.)",
+        "x": "21.2560215",
+        "y": "48.7202801"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Štefánia Vidriczkóová, Košice-Sídlisko KVP, (MUDr. Štefánia Vidriczkóová)",
+        "x": "21.2138848",
+        "y": "48.7206006"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Andrea Vinnaiová, Košice-Staré Mesto, (MUDr. Andrea Vinnaiová)",
+        "x": "21.2547833",
+        "y": "48.7195089"
+    },
+    {
+        "name": "Stomateliér,MUDr.Andrea Vödrösová, Košice-Juh, (MUDr. Andrea Vödrösová)",
+        "x": "21.2613562",
+        "y": "48.7037796"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Melánia Zubriková, Košice-Západ, (SANODENT s.r.o.)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Milan Kováč, Košice-Staré Mesto, (APDENT Košice, s.r.o.)",
+        "x": "21.2423007",
+        "y": "48.726886"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ladislav Eštok, Košice-Staré Mesto, (NEODENT s. r. o.)",
+        "x": "21.25794",
+        "y": "48.7246775"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marta   Bodnárová, Košice-Juh, (Media Dent s. r. o.)",
+        "x": "21.2538151",
+        "y": "48.7150273"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Ľubomír Redaj, Košice-Sever, (Dental One  s.r.o.)",
+        "x": "21.2404772",
+        "y": "48.7298319"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jana Ginelliová Lenčová, Košice-Nad jazerom, (LP Dent s.r.o.)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Sára Vargová, Košice-Šaca, (P.N.Dent, s. r. o.)",
+        "x": "21.1729654",
+        "y": "48.6363598"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Peter Novotný, Košice-Juh, (P.N.Dent, s. r. o.)",
+        "x": "21.251878",
+        "y": "48.7120998"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Puklušová, Košice-Západ, (Stomatologická ambulancia MUDr. Puklušová s.r.o.)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Vlasta Zajacová, Košice-Staré Mesto, (VMV dent s.r.o.)",
+        "x": "21.2550582",
+        "y": "48.722367"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Lucia Bohušová, Košice-Nad jazerom, (MUDr. Lucia Bohušová - stomatológia, s.r.o.)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Gabriela Juhásová, Košice-Juh, (DENTITIO s.r.o.)",
+        "x": "21.2586853",
+        "y": "48.7122511"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Maroš Tomčík, Košice-Západ, (HELADENT s.r.o.)",
+        "x": "21.2218523",
+        "y": "48.7088278"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. ERika Kupcová, Košice-Barca, (Duo - DENT s. r. o.)",
+        "x": "21.2626159",
+        "y": "48.6857413"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Emilián Gramata, Košice-Juh, (GRADENT, s. r. o.)",
+        "x": "21.2572822",
+        "y": "48.7153045"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Paulína Šimonová, Košice-Staré Mesto, (EUSTOMA s. r. o.)",
+        "x": "21.2494364",
+        "y": "48.7276117"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marcela Šatanková, Košice-Staré Mesto, (ZUBAMI s.r.o.)",
+        "x": "21.2452769",
+        "y": "48.7174636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Poliklinika Centrum s.r.o.)",
+        "x": "21.2309443",
+        "y": "48.7135613"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Marián Brunovský, Košice-Sídlisko KVP, (Poliklinika ProCare Košice s.r.o.)",
+        "x": "21.2116817",
+        "y": "48.7205373"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Šaca, (Nemocnica AGEL Košice-Šaca a.s.)",
+        "x": "21.1727106",
+        "y": "48.642548"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Staré Mesto, (Nemocnica AGEL Košice-Šaca a.s.)",
+        "x": "21.2460419",
+        "y": "48.7181878"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Šaca, (Nemocnica AGEL Košice-Šaca a.s.)",
+        "x": "21.1727106",
+        "y": "48.642548"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Andrea Macháčková, Košice-Sever, (Variodent, s.r.o.)",
+        "x": "21.2494477",
+        "y": "48.7412483"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Anna Collinászyová, Košice-Staré Mesto, (Univerzitná nemocnica - Nemocnica svätého Michala, a. s.)",
+        "x": "21.2513563",
+        "y": "48.7171937"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Alexander Medzihradský, Košice-Dargov.hrdinov, (Alexia creative, s.r.o.)",
+        "x": "21.2788542",
+        "y": "48.7424342"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Soňa Brunovská, Košice-Západ, (3Dental s.r.o.)",
+        "x": "21.2458206",
+        "y": "48.7102705"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Šaca, (Nemocnica AGEL Košice-Šaca a.s.)",
+        "x": "21.1713844",
+        "y": "48.6370535"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Šaca, (Nemocnica AGEL Košice-Šaca a.s.)",
+        "x": "21.1713844",
+        "y": "48.6370535"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Šaca, (Nemocnica AGEL Košice-Šaca a.s.)",
+        "x": "21.1727106",
+        "y": "48.642548"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Dorota Šutáková, Košice-Sever, (MDDr. Dorota Šutáková)",
+        "x": "21.2406088",
+        "y": "48.7419601"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Elena Zábavníková, Košice-Západ, (Ortozab s.r.o.)",
+        "x": "21.232165",
+        "y": "48.7203291"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDR. Mária Piešová, Košice-Staré Mesto, (PIEDENT s.r.o.)",
+        "x": "21.2448795",
+        "y": "48.7231731"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Psotková, Košice-Sever, (KP Dental s.r.o.)",
+        "x": "21.2404772",
+        "y": "48.7298319"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 1, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 2, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 3, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 4, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 5, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 6, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 7, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 8, Košice-Staré Mesto, (Akadémia Košice, n.o.)",
+        "x": "21.2514016",
+        "y": "48.7257072"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva 2, Košice-Staré Mesto, (Orto Sport Centrum s.r.o.)",
+        "x": "21.2594625",
+        "y": "48.7281198"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Sabína Pavličková, Košice-Staré Mesto, (Periodental s r.o.)",
+        "x": "21.2527672",
+        "y": "48.7224189"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Dargov.hrdinov, (MDDr. Katarína Vernarecová)",
+        "x": "21.2824586",
+        "y": "48.7395041"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Staré Mesto, (Nemocnica pre obvinených a odsúdených a Ústav na výkon trestu odňatia slobody Trenčín)",
+        "x": "21.2480985",
+        "y": "48.7175635"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Šaca, (Nemocnica pre obvinených a odsúdených a Ústav na výkon trestu odňatia slobody Trenčín)",
+        "x": "21.1674298",
+        "y": "48.6328806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Rastislav Dráč, Košice-Staré Mesto, (Tomka Dent Košice s.r.o.)",
+        "x": "21.2579442",
+        "y": "48.7236482"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Daniela Kohoutková, Košice-Nad jazerom, (DanDent s.r.o.)",
+        "x": "21.2844925",
+        "y": "48.6895806"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Branislav Hoffmann, Košice-Západ, (HoffmannDent, s.r.o.)",
+        "x": "21.2307075",
+        "y": "48.7189531"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ľubomír Šmalík, MPH, Košice-Juh, (DENTAL CENTER KOŠICE s. r. o.)",
+        "x": "21.2578599",
+        "y": "48.7089608"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Martin Rísik, Košice-Sever, (LEFDENT s.r.o.)",
+        "x": "21.2506809",
+        "y": "48.7313113"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Staré Mesto, (Dentcentrum s.r.o.)",
+        "x": "21.2480789",
+        "y": "48.7185309"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Stomatológ s.r.o.)",
+        "x": "21.2409572",
+        "y": "48.7107163"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Nikola Dubecká, Košice-Staré Mesto, (Family Dental Care - Košice s.r.o.)",
+        "x": "21.2596593",
+        "y": "48.7182118"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Ľubomír Šmalík, MPH, Košice-Staré Mesto, (DENTAL CENTER KOŠICE s. r. o.)",
+        "x": "21.2460419",
+        "y": "48.7181878"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Jana Takáčová, Košice-Západ, (Váš zubár s.r.o.)",
+        "x": "21.2391856",
+        "y": "48.7128746"
+    },
+    {
+        "name": "VLADE s.r.o., Košice-Staré Mesto, (VLADE s. r. o.)",
+        "x": "21.2628548",
+        "y": "48.7212297"
+    },
+    {
+        "name": "Mesárošová Dent s.r.o., Košice-Staré Mesto, (Mesárošová Dent s.r.o.)",
+        "x": "21.2580962",
+        "y": "48.7238696"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Staré Mesto, (DC Medical s.r.o.)",
+        "x": "21.2547519",
+        "y": "48.718299"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Sídlisko KVP, (Oledent s.r.o.)",
+        "x": "21.2160937",
+        "y": "48.7147646"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Sandra Benhatchi, Košice-Sídlisko KVP, (KALA-DENT s.r.o.)",
+        "x": "21.2160937",
+        "y": "48.7147646"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Staré Mesto, (Univerzitná nemocnica - Nemocnica svätého Michala, a. s.)",
+        "x": "21.2562367",
+        "y": "48.7179515"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Zuzana Fejka Štovčíková, Košice-Staré Mesto, (Smile Design s.r.o.)",
+        "x": "21.2526323",
+        "y": "48.727427"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Klaudia Krempaská, Košice-Juh, (KMK dent)",
+        "x": "21.2452241",
+        "y": "48.7055313"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Vladimír Strečko, Košice-Staré Mesto, (Schill Dental Clinic Košice s.r.o.)",
+        "x": "21.2649046",
+        "y": "48.7184194"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Alica Pavlíková, Košice-Západ, (famildent)",
+        "x": "21.238876",
+        "y": "48.7133442"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Milko Rusinko, Košice-Dargov.hrdinov, (MUDr. Milko Rusinko s.r.o.)",
+        "x": "21.2884835",
+        "y": "48.7278911"
+    },
+    {
+        "name": "Puredent, zubná ambulancia, MDDr. Natália Ondovčinová, Hlinkova 1/C, Košice-Juh, (Dentol Perfect s.r.o.)",
+        "x": "21.2581056",
+        "y": "48.7134695"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Lucia Kurjanová, Košice-Staré Mesto, (LUK Dent s.r.o.)",
+        "x": "21.2579442",
+        "y": "48.7236482"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jozef Minčík, PhD., Košice-Západ, (All Dente s.r.o.)",
+        "x": "21.2300065",
+        "y": "48.7188383"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Mižáková, Košice-Sever, (JES DENT s.r.o.)",
+        "x": "21.2460726",
+        "y": "48.735179"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Silvia Nedbáleková, Košice-Dargov.hrdinov, (DENTALORTHO s.r.o.)",
+        "x": "21.2824586",
+        "y": "48.7395041"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Lenka Budziňáková, Košice-Staré Mesto, (QUALIDENT, s.r.o.)",
+        "x": "21.2503843",
+        "y": "48.7295123"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Elena Ryšová, Košice-Západ, (ERY Dent s.r.o.)",
+        "x": "21.2339411",
+        "y": "48.7163576"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Soňa Svobodová, Košice-Staré Mesto, (SOS Dent s.r.o.)",
+        "x": "21.250076",
+        "y": "48.726817"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Tomáš Barna, Košice-Nad jazerom, (D.SANUS s.r.o.)",
+        "x": "21.2904875",
+        "y": "48.6844706"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Jana Ohlasová, Košice-Juh, (OHLASDENT s. r. o.)",
+        "x": "21.2510431",
+        "y": "48.7098851"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Lívia Vargová, Košice-Dargov.hrdinov, (LV DENT s.r.o.)",
+        "x": "21.2824586",
+        "y": "48.7395041"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Staré Mesto, (DentaTec s.r.o.)",
+        "x": "21.2611336",
+        "y": "48.7226828"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Lucia Blanárová, Košice-Staré Mesto, (Amadent s.r.o.)",
+        "x": "21.2535608",
+        "y": "48.731266"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2553325",
+        "y": "48.7091486"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Univerzitná nemocnica L. Pasteura Košice)",
+        "x": "21.2374149",
+        "y": "48.7221636"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Deana Rozprávková, Košice-Staré Mesto, (Alžbetinum s.r.o.)",
+        "x": "21.2530113",
+        "y": "48.7193269"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Juh, (Scarlett Clinic s.r.o.)",
+        "x": "21.2515786",
+        "y": "48.7012859"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Jolana Hrušovská, Košice-Dargov.hrdinov, (FABRYDENT s.r.o.)",
+        "x": "21.2819216",
+        "y": "48.7441499"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, Košice-Západ, (Ergomed Poliklinika, s.r.o.)",
+        "x": "21.24471",
+        "y": "48.7080329"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MDDr. Viliam Nagy, Košice-Západ, (KEROdent s.r.o.)",
+        "x": "21.23927",
+        "y": "48.7164927"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Katarína Lukáčová, Košice-Staré Mesto, (LKDdent s.r.o.)",
+        "x": "21.2622222",
+        "y": "48.7188282"
+    },
+    {
+        "name": "Ambulancia zubného lekárstva, MUDr. Dagmar Ledecká , Košice-Západ, (ZUBKY s. r. o.)",
+        "x": "21.2424789",
+        "y": "48.7215967"
+    }
+]

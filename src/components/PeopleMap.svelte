@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { onMount, onDestroy } from 'svelte';
     import { browser } from '$app/environment';
     import {
@@ -11,17 +11,12 @@
     import Layout from '$/routes/+layout.svelte';
     import { listen } from 'svelte/internal';
     import {is_in_polygon} from '$/lib/util';
-
-    // html element of the map
-    let mapElement;
-    // map object
-    let map;
-    // selected place marker
-    let marker;
-    // displayed amenities
-    let amenities = [];
-    // displayed isochrone polygon
-    let polygon;
+    
+    let mapElement; // html element of the map
+    let map; // map object
+    let marker; // selected place marker
+    let amenities = []; // displayed amenities
+    let polygon; // displayed isochrone polygon
 
     // lat and lon can come from the URL, if provided
     export let selected_lat;
@@ -54,6 +49,8 @@
                 marker = L.marker([selected_lat, selected_lon]).addTo(map);
             }
             marker.setLatLng([selected_lat, selected_lon]);
+            
+            let amenity_filter = 'po,zs,ms,ps';
 
             // fetch data about location
             let data = await (
@@ -119,7 +116,8 @@
 
 <div class="map">
     <div class="main_map" bind:this={mapElement} />
-    <div class="sidebar" />
+    <div class="sidebar">
+    </div>
 </div>
 
 <style lang="scss">
