@@ -9,8 +9,7 @@
         "preview": "vite preview",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "lint": "eslint .",
-        "deploy": "npm run build && rsync -aP . advent@advent.gympos.sk:/www/advent"
+        "lint": "eslint ."
     },
     "devDependencies": {
         "@sveltejs/adapter-auto": "next",
@@ -23,7 +22,6 @@
         "eslint-plugin-node": "^11.1.0",
         "eslint-plugin-promise": "^6.1.1",
         "eslint-plugin-svelte3": "^4.0.0",
-        "mdsvex": "^0.10.6",
         "svelte": "^3.44.0",
         "svelte-check": "^2.7.1",
         "svelte-hamburgers": "^4.0.1",
@@ -41,6 +39,5 @@
         "query-overpass": "^1.5.5",
         "sass": "^1.56.1",
         "svelte-recaptcha-v2": "^0.0.2",
-        "zod": "^3.19.1"
     }
 }
