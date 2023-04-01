@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 95000,
+        "plocha": 39,
+        "ulica": "Aténska",
+        "mc": "Košice I - Sídlisko Ťahanovce",
+        "lat": 48.75884,
+        "lng": 21.26399
+    },
+    {
+        "id": 2,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 97999,
+        "plocha": 39,
+        "ulica": "Havanská",
+        "mc": "Košice I - Sídlisko Ťahanovce",
+        "lat": 48.75962,
+        "lng": 21.27075
+    },
+    {
+        "id": 3,
+        "druh": "1 izbový byt",
+        "stav": "Čiastočná rekonštrukcia",
+        "cena": 98500,
+        "plocha": 39,
+        "ulica": "Bukureštská",
+        "mc": "Košice I - Sídlisko Ťahanovce",
+        "lat": 48.75901,
+        "lng": 21.26953
+    },
+    {
+        "id": 4,
+        "druh": "1 izbový byt",
+        "stav": "Čiastočná rekonštrukcia",
+        "cena": 98500,
+        "plocha": 40,
+        "ulica": "Bukureštská",
+        "mc": "Košice I - Sídlisko Ťahanovce",
+        "lat": 48.75884,
+        "lng": 21.26399
+    },
+    {
+        "id": 5,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 79990,
+        "plocha": 23,
+        "ulica": "Popradská",
+        "mc": "Košice II - Západ",
+        "lat": 48.71217,
+        "lng": 21.22725
+    },
+    {
+        "id": 6,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 89000,
+        "plocha": 27,
+        "ulica": "Popradská",
+        "mc": "Košice II - Západ",
+        "lat": 48.71846,
+        "lng": 21.24006
+    },
+    {
+        "id": 7,
+        "druh": "Garsónka",
+        "stav": "Kompletná rekonštrukcia",
+        "cena": 82990,
+        "plocha": 22,
+        "ulica": "Trieda SNP 287/76",
+        "mc": "Košice II - Západ",
+        "lat": 48.71059,
+        "lng": 21.23536
+    },
+    {
+        "id": 8,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 83000,
+        "plocha": 28,
+        "ulica": "Popradská",
+        "mc": "Košice II - Západ",
+        "lat": 48.71217,
+        "lng": 21.227249
+    },
+    {
+        "id": 9,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 89000,
+        "plocha": 27,
+        "ulica": "Považská",
+        "mc": "Košice II - Západ",
+        "lat": 48.71846,
+        "lng": 21.240061
+    },
+    {
+        "id": 10,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 90990,
+        "plocha": 27.51,
+        "ulica": "Humenská",
+        "mc": "Košice II - Západ",
+        "lat": 48.707729,
+        "lng": 21.235241
+    },
+    {
+        "id": 11,
+        "druh": "1 izbový byt",
+        "stav": "Novostavba",
+        "cena": 77200,
+        "plocha": 33,
+        "ulica": "Štúrová",
+        "mc": "Košice I - Staré Mesto",
+        "lat": 48.7206148,
+        "lng": 21.2578294
+    },
+    {
+        "id": 12,
+        "druh": "Garsónka",
+        "stav": "Čiastočná rekonštrukcia",
+        "cena": 85000,
+        "plocha": 24,
+        "ulica": "Adlerova",
+        "mc": "Košice III - Dargovských Hrdinov",
+        "lat": 48.744975,
+        "lng": 21.2789492
+    },
+    {
+        "id": 13,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 94999,
+        "plocha": 36,
+        "ulica": "Titogradská",
+        "mc": "Košice II - Sídlisko KVP",
+        "lat": 48.7188772,
+        "lng": 21.217011
+    },
+    {
+        "id": 14,
+        "druh": "1 izbový byt",
+        "stav": "Novostavba",
+        "cena": 99000,
+        "plocha": 23.99,
+        "ulica": "Klimkovičova",
+        "mc": "Košice II - Sídlisko KVP",
+        "lat": 48.7126933,
+        "lng": 21.2108053
+    },
+    {
+        "id": 15,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 46990,
+        "plocha": 29,
+        "ulica": "Námestie Oceliarov",
+        "mc": "Košice II - Šaca",
+        "lat": 48.6355216,
+        "lng": 21.1711852
+    },
+    {
+        "id": 16,
+        "druh": "1 izbový byt",
+        "stav": "Kompletná rekonštrukcia",
+        "cena": 99950,
+        "plocha": 35,
+        "ulica": "Učňovská",
+        "mc": "Košice II - Šaca",
+        "lat": 48.6305567,
+        "lng": 21.1811631
+    },
+	{
+        "id": 17,
+        "druh": "1 izbový byt",
+        "stav": "Pôvodný stav",
+        "cena": 92000,
+        "plocha": 24,
+        "ulica": "Kalinovská",
+        "mc": "Košice III - Dargovských Hrdinov",
+        "lat": 48.7431988,
+        "lng": 21.2759803
+    },
+	{
+        "id": 19,
+        "druh": "Garsónka",
+        "stav": "Kompletná rekonštrukcia",
+        "cena": 87000,
+        "plocha": 21,
+        "ulica": "Štúrova",
+        "mc": "Košice I - Staré Mesto",
+        "lat": 48.7167776,
+        "lng": 21.2591158
+    },
+	{
+        "id": 20,
+        "druh": "Garsónka",
+        "stav": "Kompletná rekonštrukcia",
+        "cena": 89000,
+        "plocha": 22,
+        "ulica": "Čárskeho",
+        "mc": "Košice I - Sever",
+        "lat": 48.7167776,
+        "lng": 21.2591158
+    },
+	{
+        "id": 21,
+        "druh": "1 izbový byt",
+        "stav": "Čiastočná rekonštrukcia",
+        "cena": 89990,
+        "plocha": 23,
+        "ulica": "Ľudová",
+        "mc": "Košice II - Západ",
+        "lat": 48.7173628,
+        "lng": 21.2299858
+    }
+]

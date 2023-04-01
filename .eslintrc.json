@@ -1,0 +1,47 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"plugins": [
+		"svelte3",
+		"@typescript-eslint"
+	],
+	"overrides": [
+		{
+			"files": [
+				"**/*.svelte"
+			],
+			"processor": "svelte3/svelte3",
+			"rules": {
+				"quotes": [
+					"error",
+					"single"
+				]
+			}
+		}
+	],
+	"settings": {},
+	"parserOptions": {
+		"sourceType": "module",
+		"ecmaVersion": 2020
+	},
+	"env": {
+		"browser": true,
+		"es2017": true,
+		"node": true
+	},
+	"rules": {
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"no-empty": "off"
+	}
+}
