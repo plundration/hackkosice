@@ -5,7 +5,8 @@ import { readFileSync } from 'fs';
 export const GET: RequestHandler = async ({ request, url }) => {
     let data = JSON.parse(readFileSync("static/obyvatelstvo.json"));
 
-    return json(
-        data
-    );
+    return json({
+        heat: data,
+        isochrone: []
+    });
 };

@@ -95,6 +95,8 @@
             if (polygon) polygon.remove();
             // create new isochrone polygon
             polygon = L.polygon(data.isochrone).addTo(map);
+            // L.polygon().addTo(map);
+
 
             setFootWalking = () => {
                 mode = "foot-walking";
