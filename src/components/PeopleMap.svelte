@@ -240,9 +240,9 @@
         z-index: 10000;
     }
 
-    .button_container > Button {
+    .button_container :global(Button) {
+        background-color: $clr-ludia;
         width: 3rem;
         height: 3rem;
-        background-color: $clr-ludia;
     }
 </style>
