@@ -1,12 +1,39 @@
 <script lang="ts">
-    import { icon_sources, amenityTypes } from '$/lib/map';
+    import { icon_sources } from '$/lib/map';
     export let onSelect;
+
+    export const amenityTypes = [
+        { name: 'Supermarket', file: 'supermarket' },
+        { name: 'Reštaurácia', file: 'restauracia' },
+        { name: 'Zastávka', file: 'zastavka' },
+        { name: 'Kaviareň', file: 'kaviaren' },
+        { name: 'Krčma', file: 'krcma' },
+        { name: 'Ambulancia', file: 'ambulancia' },
+        { name: 'Bar', file: 'bar' },
+        { name: 'Detská ambulancia', file: 'detska_ambulancia' },
+        { name: 'Ihrisko', file: 'ihrisko' },
+        { name: 'Drogéria', file: 'drogeria' },
+        { name: 'Fastfood', file: 'fastfood' },
+        { name: 'Gym', file: 'gym' },
+        { name: 'Lekáreň', file: 'lekaren' },
+        { name: 'Zubár', file: 'zubar' },
+        { name: 'Pošta', file: 'posta' },
+        { name: 'Škôlka', file: 'skolka' },
+        { name: 'Základná škola', file: 'zakladna_skola' },
+        { name: 'Psí výbeh', file: 'psi_vybeh' },
+        { name: 'Balíkobox', file: 'balikobox' },
+    ];
 </script>
 
 <div class="info-pane">
     <div class="list">
         {#each amenityTypes as type}
-            <div class="listItem" on:click={() => {onSelect(type.file)}}>
+            <div
+                class="listItem"
+                on:click={() => {
+                    onSelect(type.file);
+                }}
+            >
                 <img src={icon_sources[type.file].iconUrl} />
                 <span>{type.name}</span>
             </div>
@@ -78,7 +105,7 @@
         padding: 0.3em;
         border-radius: 10px;
     }
-    
+
     .listItem:hover {
         background-color: #eeeeee;
     }

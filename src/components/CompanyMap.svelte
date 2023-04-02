@@ -18,6 +18,8 @@
     let selected_amenity;
     let on_amenity_selected = amenity_type => {};
 
+    let isochrone_polygons = [];
+
     onMount(async () => {
         if (!browser) return;
 
@@ -30,8 +32,8 @@
         );
 
         var cfg = {
-            radius: 0.01,
-            maxOpacity: 0.7,
+            radius: 0.015,
+            maxOpacity: 0.5,
             scaleRadius: true,
             useLocalExtrema: false,
             latField: 'y',
@@ -58,7 +60,7 @@
 
         on_amenity_selected = async (amenity_type) => {
             selected_amenity = amenity_type;
-        let resp = await (await fetch('/firmy')).json();
+        let resp = await (await fetch(`/firmy?name=${selected_amenity}`)).json();
         let data = [];
         for (let y in resp.heat) {
             for (let x in resp.heat[y]) {
@@ -72,8 +74,12 @@
         }
         heatmapLayer.setData({ max: 10000, data: data });
 
+        for (let i in isochrone_polygons) {
+            isochrone_polygons[i].remove();
+        }
         resp.isochrone.forEach(e => {
-            L.polygon(e[0]).addTo(map);
+            let poly = L.polygon(e[0]).addTo(map);
+            isochrone_polygons.push(poly);
         });
 
         };
