@@ -7,7 +7,7 @@
     <div class="main-page-top">
         <div class="overlay">
             <div class="top-content">
-                <h1>15-minútové Košice</h1>
+                <h1>Košice na dlani</h1>
                 <div class="main-page-button">
                     <Button onClick={() => goto('/ubytovanie')}>Pre ľudí</Button>
                     <Button onClick={() => goto('/podnikanie')}>Pre firmy</Button>
@@ -83,7 +83,7 @@
             gap: 2em;
 
             h1 {
-                font-size: 3em;
+                font-size: 4em;
                 padding: 0.2em 0.4em;
                 margin: 0 1.2em;
                 background-color: #ffffffd0;
