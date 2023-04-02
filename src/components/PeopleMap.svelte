@@ -17,7 +17,7 @@
     let map; // map object
     let marker; // selected place marker
     let amenities = []; // displayed amenities
-    let polygon; // displayed isochrone polygon
+    let polygons = []; // displayed isochrone polygon
     let amenityData = [];
 
     // lat and lon can come from the URL, if provided
@@ -43,6 +43,11 @@
 
         // if there is a place in the URL, display it
         if (selected_lat && selected_lon) run();
+
+        let data = await (await fetch("/mesto")).json();
+        for (let i in data) {
+            polygons.push(L.polygon(data[i][0]).addTo(map));
+        }
 
         // display information about the selected point on the map
         async function run() {
@@ -91,10 +96,11 @@
 
             console.log(far);
 
-            // reset isochrone polygon
-            if (polygon) polygon.remove();
+            for (let i in polygons) {
+                polygons[i].remove();
+            }
             // create new isochrone polygon
-            polygon = L.polygon(data.isochrone).addTo(map);
+            polygons.push(L.polygon(data.isochrone).addTo(map));
             // L.polygon().addTo(map);
 
 
