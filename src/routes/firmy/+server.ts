@@ -3,7 +3,7 @@ import { json, type RequestHandler } from '@sveltejs/kit';
 import { readFileSync } from 'fs';
 
 export const GET: RequestHandler = async ({ request, url }) => {
-    let data = JSON.parse(readFileSync("static/obyvatelstvo.json"));
+    let data = JSON.parse(readFileSync("static/outputc.json"));
 
     return json({
         heat: data,

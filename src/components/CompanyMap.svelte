@@ -56,7 +56,7 @@
 
         heatmapLayer.addTo(map);
 
-        on_amenity_selected = amenity_type => {
+        on_amenity_selected = async (amenity_type) => {
             selected_amenity = amenity_type;
         let resp = await (await fetch('/firmy')).json();
         let data = [];
