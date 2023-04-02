@@ -12,6 +12,29 @@
     import { listen } from 'svelte/internal';
     import {is_in_polygon} from '$/lib/util';
     import Button from '$/components/Button.svelte';
+
+    type AmenityType = { name: string; file: string };
+    const amenityTypes: AmenityType[] = [
+        { name: 'Supermarket', file: 'supermarket' },
+        { name: 'Ambulancia', file: 'ambulancia' },
+        { name: 'Reštaurácia', file: 'restauracia' },
+        { name: 'Základná škola', file: 'zakladna_skola' },
+        { name: 'Škôlka', file: 'skolka' },
+        { name: 'Ihrisko', file: 'ihrisko' },
+        { name: 'Psí výbeh', file: 'psi_vybeh' },
+        { name: 'Gym', file: 'gym' },
+        { name: 'Kaviarňa', file: 'kaviaren' },
+        { name: 'Krčma', file: 'krcma' },
+        { name: 'Detská ambulancia', file: 'detska_ambulancia' },
+        { name: 'Drogéria', file: 'drogeria' },
+        { name: 'Lekáreň', file: 'lekaren' },
+        { name: 'Zubár', file: 'zubar' },
+        { name: 'Pošta', file: 'posta' },
+        { name: 'Zastávka', file: 'zastavka' },
+        { name: 'Balíkobox', file: 'balikobox' },
+        { name: 'Fastfood', file: 'fastfood' },
+        { name: 'Bar', file: 'bar' },
+    ];
     
     let mapElement; // html element of the map
     let map; // map object
@@ -19,6 +42,8 @@
     let amenities = {}; // displayed amenities
     let polygons = []; // displayed isochrone polygon
     let amenityData = [];
+    
+    let hoveredAmenity: string | null = null;
 
     // lat and lon can come from the URL, if provided
     export let selected_lat;
@@ -156,9 +181,11 @@
             <Button onClick={setFootWalking}>🚶‍♂️</Button>
             <Button onClick={setBike}>🚲</Button>
         </div>
+
+        <div class="text_container" class:disabled={hoveredAmenity === null}>{amenityTypes.find(a => a.file === hoveredAmenity)?.name}</div>
     </div>
     <div class="sidebar">
-        <InfoPane {amenityData} />
+        <InfoPane {amenityData} bind:hoveredAmenity />
     </div>
 </div>
 
@@ -246,5 +273,25 @@
         background-color: $clr-light;
         border: $clr-ludia 2px solid;
         padding: 0.3em;
+    }
+    
+    .text_container {
+        width: auto;
+        height: auto !important;
+
+        font-size: 1.75em;
+        padding: 0.2em 0.4em;
+        
+        box-shadow: .0em .0em .20em .20em #0000000f;
+        
+        right: 1em;
+        bottom: 1em;
+        position: absolute;
+        z-index: 10000;
+        
+        border-radius: 0.5em;
+        background-color: $clr-light;
+        
+        &.disabled { display: none; }
     }
 </style>
