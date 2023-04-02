@@ -42,13 +42,25 @@ export function node_distance(lat, lon, item) {
 }
 
 export let icon_sources = {
-    bussin: { iconUrl: '/bussin.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    skola: { iconUrl: '/skola.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    skolka: { iconUrl: '/skolka.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    spital: { iconUrl: '/spital.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    dom: { iconUrl: '/dom.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    pes: { iconUrl: '/pes.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    velky_dom: { iconUrl: '/dom.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    apatieka: { iconUrl: '/apatieka.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
-    error: { iconUrl: '/error.png', iconSize: [40, 40], iconAnchor: [20, 20] }
+    supermarket: { iconUrl: '/amenity_icons/supermarket.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    restauracia: { iconUrl: '/amenity_icons/restauracia.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    zastavka: { iconUrl: '/amenity_icons/zastavka.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    kaviaren: { iconUrl: '/amenity_icons/kaviaren.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    krcma: { iconUrl: '/amenity_icons/krcma.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    ambulancia: { iconUrl: '/amenity_icons/ambulancia.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    bar: { iconUrl: '/amenity_icons/bar.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    detska_ambulancia: { iconUrl: '/amenity_icons/detska_ambulancia.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    ihrisko: { iconUrl: '/amenity_icons/ihrisko.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    drogeria: { iconUrl: '/amenity_icons/drogeria.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    fastfood: { iconUrl: '/amenity_icons/fastfood.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    gym: { iconUrl: '/amenity_icons/gym.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    lekaren: { iconUrl: '/amenity_icons/lekaren.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    zubar: { iconUrl: '/amenity_icons/zubar.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    posta: { iconUrl: '/amenity_icons/posta.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    skolka: { iconUrl: '/amenity_icons/skolka.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    zakladna_skola: { iconUrl: '/amenity_icons/zakladna_skola.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    obchod: { iconUrl: '/amenity_icons/obchod.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    psi_vybeh: { iconUrl: '/amenity_icons/psi_vybeh.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    balikobox: { iconUrl: '/amenity_icons/balikobox.svg', iconSize: [40, 40], iconAnchor: [20, 20] },
+    error: { iconUrl: '/amenity_icons/error.png', iconSize: [40, 40], iconAnchor: [20, 20] }
 };

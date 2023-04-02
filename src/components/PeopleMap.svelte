@@ -69,8 +69,8 @@
             for (let i in data.amenities) {
                 // create a marker
                 let a = L.marker([data.amenities[i].y, data.amenities[i].x], {
-                    icon: icons[data.amenities[i].typ_0]
-                        ? icons[data.amenities[i].typ_0]
+                    icon: icons[data.amenities[i].fileName]
+                        ? icons[data.amenities[i].fileName]
                         : icons.error,
                 })
                     .addTo(map)
