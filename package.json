@@ -36,6 +36,7 @@
         "leaflet": "^1.9.3",
         "leaflet-heatmap": "^1.0.0",
         "leaflet-webgl-heatmap": "^0.2.7",
+        "martinez-polygon-clipping": "github:w8r/martinez",
         "query-overpass": "^1.5.5",
         "sass": "^1.56.1",
         "svelte-recaptcha-v2": "^0.0.2"

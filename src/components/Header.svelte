@@ -2,6 +2,8 @@
     import Burger from './Burger.svelte';
     import NavLink from './NavLink.svelte';
 
+    import { page } from '$app/stores'
+
     export let links: { name: string; href: string }[];
 </script>
 

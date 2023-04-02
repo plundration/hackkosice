@@ -19,7 +19,7 @@ const amenityTypes: AmenityType[] = [
     { name: 'Lekáreň', file: 'lekaren' },
     { name: 'Zubár', file: 'zubar' },
     { name: 'Pošta', file: 'posta' },
-    { name: 'Školka', file: 'skolka' },
+    { name: 'Škôlka', file: 'skolka' },
     { name: 'Základná škola', file: 'zakladna_skola' },
     { name: 'Psí výbeh', file: 'psi_vybeh' },
     { name: 'Balíkobox', file: 'balikobox' },
@@ -28,10 +28,10 @@ const amenityTypes: AmenityType[] = [
 export const GET: RequestHandler = async ({ request, url }) => {
     const lat = parseFloat(url.searchParams.get('lat') || '');
     const lon = parseFloat(url.searchParams.get('lon') || '');
-    const type = (url.searchParams.get('type') || 'foot-walking') as IsochroneType;
+    const mode = (url.searchParams.get('mode') || 'foot-walking') as IsochroneType;
     const time = parseInt(url.searchParams.get('time') || '900');
 
-    const timeMultiplier = type === 'foot-walking' ? 1 / 1.4 : type === 'cycling-regular' ? 1 / 6.9 : 1 / 9;
+    const timeMultiplier = mode === 'foot-walking' ? 1 / 1.4 : mode === 'cycling-regular' ? 1 / 6.9 : 1 / 9;
 
     const closestAmenities: { name: string, x: number, y: number, dist: number, generalName: string, fileName: string, time: number }[] = [];
 
@@ -49,14 +49,14 @@ export const GET: RequestHandler = async ({ request, url }) => {
             }
         }
 
-        const travelTime = Math.max(Math.round(closestDistance * timeMultiplier / 60), 1);
+        const travelTime = Math.max(Math.round(closestDistance * timeMultiplier * 0.7 / 60), 1);
         closestAmenities.push({ name: closest.name, x: closest.x, y: closest.y, dist: closestDistance, generalName: amenityTypes[key].name, fileName: amenityTypes[key].file, time: travelTime });
     }
 
     console.log(closestAmenities);
 
     return json({
-        isochrone: await getIsochrone({ lat, lon }, type, time),
+        isochrone: await getIsochrone({ lat, lon }, mode, time),
         amenities: closestAmenities
     });
 };

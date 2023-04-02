@@ -61,7 +61,7 @@
 
             // fetch data about location
             let data = await (
-                await fetch(`/ludia?lat=${selected_lat}&lon=${selected_lon}`, {
+                await fetch(`/ludia?lat=${selected_lat}&lon=${selected_lon}&mode=${mode}`, {
                     method: 'GET',
                 })
             ).json();
