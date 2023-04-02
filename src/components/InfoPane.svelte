@@ -1,6 +1,6 @@
 <script lang="ts">
     export let amenityData;
-    export let hoveredAmenity = null;
+    export let hoveredAmenity: string | null = null;
 </script>
 
 <div class="info-pane">
@@ -8,9 +8,13 @@
         <div class="grid">
             {#each amenityData as amenity}
                 <div
-                    class={amenity.time < 5 ? 'green' : amenity.time < 10 ? 'yellow' : 'red'}
-                    on:mouseenter={() => { hoveredAmenity = amenity.fileName; console.log('enter') }}
-                    on:mouseleave={() => { hoveredAmenity = null; console.log('leave') }}
+                    class={amenity.time < 5
+                        ? 'green'
+                        : amenity.time < 10
+                        ? 'yellow'
+                        : 'red'}
+                    on:mouseenter={() => { hoveredAmenity = amenity.fileName; }}
+                    on:mouseleave={() => { hoveredAmenity = null; }}
                 >
                     <img src={'amenity_icons/' + amenity.fileName + '.svg'} />
                     <p>{amenity.time} min</p>
@@ -24,7 +28,6 @@
             <b>pešo</b>
             dostať ku <b>všetkým denným potrebám a službám</b>
         </p>
-        <p>Tieto potreby sú:</p>
         <ul>
             <li>Vzdelanie</li>
             <li>Zdravotná starostlivosť</li>
@@ -102,6 +105,7 @@
             padding: 0.3em;
             border-radius: 0.8em;
             border: var(--border-clr) solid 0.5em;
+            text-align: center;
 
             img {
                 width: 100%;
