@@ -68,12 +68,12 @@
     }
 
     .burger-menu {
-        $width: Min(65vw, 400px);
+        $width: Min(80vw, 400px);
         width: $width;
         height: 100vh;
         position: absolute;
 
-        font-size: 3em;
+        font-size: 2.6em;
 
         top: 0;
         left: calc(-1 * $width);

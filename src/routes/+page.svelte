@@ -9,8 +9,8 @@
             <div class="top-content">
                 <h1>15-minútové Košice</h1>
                 <div class="main-page-button">
-                    <Button onClick={() => goto('/ludia')}>Pre ľudí</Button>
-                    <Button onClick={() => goto('/firmy')}>Pre firmy</Button>
+                    <Button onClick={() => goto('/ubytovanie')}>Pre ľudí</Button>
+                    <Button onClick={() => goto('/podnikanie')}>Pre firmy</Button>
                 </div>
             </div>
         </div>

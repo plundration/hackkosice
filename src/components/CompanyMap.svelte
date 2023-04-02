@@ -60,7 +60,7 @@
 
         on_amenity_selected = async (amenity_type) => {
             selected_amenity = amenity_type;
-        let resp = await (await fetch(`/firmy?name=${selected_amenity}`)).json();
+        let resp = await (await fetch(`/podnikanie?name=${selected_amenity}`)).json();
         let data = [];
         for (let y in resp.heat) {
             for (let x in resp.heat[y]) {

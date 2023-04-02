@@ -5,24 +5,24 @@ import { readFileSync } from 'fs';
 type AmenityType = { name: string, file: string };
 const amenityTypes: AmenityType[] = [
     { name: 'Supermarket', file: 'supermarket' },
+    { name: 'Ambulancia', file: 'ambulancia' },
     { name: 'Reštaurácia', file: 'restauracia' },
-    { name: 'Zastávka', file: 'zastavka' },
+    { name: 'Základná škola', file: 'zakladna_skola' },
+    { name: 'Škôlka', file: 'skolka' },
+    { name: 'Ihrisko', file: 'ihrisko' },
+    { name: 'Psí výbeh', file: 'psi_vybeh' },
+    { name: 'Gym', file: 'gym' },
     { name: 'Kaviarňa', file: 'kaviaren' },
     { name: 'Krčma', file: 'krcma' },
-    { name: 'Ambulancia', file: 'ambulancia' },
-    { name: 'Bar', file: 'bar' },
     { name: 'Detská ambulancia', file: 'detska_ambulancia' },
-    { name: 'Ihrisko', file: 'ihrisko' },
     { name: 'Drogéria', file: 'drogeria' },
-    { name: 'Fastfood', file: 'fastfood' },
-    { name: 'Gym', file: 'gym' },
     { name: 'Lekáreň', file: 'lekaren' },
     { name: 'Zubár', file: 'zubar' },
     { name: 'Pošta', file: 'posta' },
-    { name: 'Škôlka', file: 'skolka' },
-    { name: 'Základná škola', file: 'zakladna_skola' },
-    { name: 'Psí výbeh', file: 'psi_vybeh' },
+    { name: 'Zastávka', file: 'zastavka' },
     { name: 'Balíkobox', file: 'balikobox' },
+    { name: 'Fastfood', file: 'fastfood' },
+    { name: 'Bar', file: 'bar' },
 ];
 
 export const GET: RequestHandler = async ({ request, url }) => {
