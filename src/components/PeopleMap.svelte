@@ -114,12 +114,12 @@
             };
         }
 
-        function highlight_amenity(amenity_type) {
-            let icon = amenities[amenity_type].getIcon();
-            icon.iconSize = [100, 100];
-            icon.iconAnchor = [50, 50];
-            amenities[amenity_type].setIcon(icon);
-        }
+        // function highlight_amenity(amenity_type) {
+        //     let icon = amenities[amenity_type].getIcon();
+        //     icon.iconSize = [100, 100];
+        //     icon.iconAnchor = [50, 50];
+        //     amenities[amenity_type].setIcon(icon);
+        // }
 
         // select point on click
         map.on('click', e => {

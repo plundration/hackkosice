@@ -19,9 +19,16 @@
     let on_amenity_selected = amenity_type => {};
 
     let isochrone_polygons = [];
+    let markers = [];
 
     onMount(async () => {
         if (!browser) return;
+
+        // initialize icons
+        let icons = {};
+        for (let i in icon_sources) {
+            icons[i] = L.icon({iconUrl: icon_sources[i].iconUrl, iconSize: [20, 20], iconAnchor: [10, 10]});
+        }
 
         var baseLayer = L.tileLayer(
             'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -58,29 +65,43 @@
 
         heatmapLayer.addTo(map);
 
-        on_amenity_selected = async (amenity_type) => {
+        on_amenity_selected = async amenity_type => {
             selected_amenity = amenity_type;
-        let resp = await (await fetch(`/podnikanie?name=${selected_amenity}`)).json();
-        let data = [];
-        for (let y in resp.heat) {
-            for (let x in resp.heat[y]) {
-                data.push({
-                    x: 21.1 + x * 0.01,
-                    y: 48.5 + y * 0.01,
-                    value: resp.heat[y][x],
-                });
+            let resp = await (
+                await fetch(`/podnikanie?name=${selected_amenity}`)
+            ).json();
+            let data = [];
+            for (let y in resp.heat) {
+                for (let x in resp.heat[y]) {
+                    data.push({
+                        x: 21.1 + x * 0.01,
+                        y: 48.5 + y * 0.01,
+                        value: resp.heat[y][x],
+                    });
+                }
             }
-        }
-        heatmapLayer.setData({ max: 100, data: data });
+            heatmapLayer.setData({ max: 100, data: data });
 
-        for (let i in isochrone_polygons) {
-            isochrone_polygons[i].remove();
-        }
-        resp.isochrone.forEach(e => {
-            let poly = L.polygon(e[0]).addTo(map);
-            isochrone_polygons.push(poly);
-        });
-
+            for (let i in isochrone_polygons) {
+                isochrone_polygons[i].remove();
+            }
+            resp.isochrone.forEach(e => {
+                let poly = L.polygon(e[0]).addTo(map);
+                isochrone_polygons.push(poly);
+            });
+            for (let i in markers) {
+                markers[i].remove();
+            }
+            for (let i in resp.amenities) {
+                console.log(resp.amenities[i]);
+                // create a marker
+                let a = L.marker([resp.amenities[i].y, resp.amenities[i].x], {
+                    icon: icons[selected_amenity]
+                })
+                    .addTo(map)
+                    .bindPopup(resp.amenities[i].name);
+                markers.push(a);
+            }
         };
     });
 
