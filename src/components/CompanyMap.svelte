@@ -64,7 +64,6 @@
         let data = [];
         for (let y in resp.heat) {
             for (let x in resp.heat[y]) {
-                console.log(y, x);
                 data.push({
                     x: 21.1 + x * 0.01,
                     y: 48.5 + y * 0.01,

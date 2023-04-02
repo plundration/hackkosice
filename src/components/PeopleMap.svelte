@@ -88,13 +88,14 @@
                     .bindPopup(data.amenities[i].name);
                 // add marker to list
                 amenities.push(a);
+                
                 // if the amenity is not in reach, add it to the list of far amenities
                 if (!is_in_polygon([data.amenities[i].y, data.amenities[i].x], data.isochrone)) {
                     far.push(data.amenities[i]);
                 }
             }
-
-            console.log(far);
+            
+            console.log(amenities);
 
             for (let i in polygons) {
                 polygons[i].remove();

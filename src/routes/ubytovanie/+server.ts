@@ -53,8 +53,6 @@ export const GET: RequestHandler = async ({ request, url }) => {
         closestAmenities.push({ name: closest.name, x: closest.x, y: closest.y, dist: closestDistance, generalName: amenityTypes[key].name, fileName: amenityTypes[key].file, time: travelTime });
     }
 
-    console.log(closestAmenities);
-
     return json({
         isochrone: await getIsochrone({ lat, lon }, mode, time),
         amenities: closestAmenities
