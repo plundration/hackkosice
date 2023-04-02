@@ -53,6 +53,28 @@ export const GET: RequestHandler = async ({ request, url }) => {
         closestAmenities.push({ name: closest.name, x: closest.x, y: closest.y, dist: closestDistance, generalName: amenityTypes[key].name, fileName: amenityTypes[key].file, time: travelTime });
     }
 
+    /*
+        const apiUrl = `http://localhost:8080/ors/v2/matrix/${mode}`;
+    const destinations = closestAmenities.map(a => [parseFloat(a.x.toString()), parseFloat(a.y.toString())]);
+    const req = {
+        locations: [[lon, lat], ...destinations], sources: [0], metrics: ['duration']
+    };
+    
+    console.log(req);
+
+    const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json; charset=utf-8', 'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8' },
+        body: JSON.stringify(req)
+    });
+
+    const j = await response.json();
+    console.log(j);
+
+
+    */
+
+
     return json({
         isochrone: await getIsochrone({ lat, lon }, mode, time),
         amenities: closestAmenities
