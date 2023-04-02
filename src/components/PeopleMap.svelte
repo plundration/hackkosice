@@ -16,7 +16,7 @@
     let mapElement; // html element of the map
     let map; // map object
     let marker; // selected place marker
-    let amenities = []; // displayed amenities
+    let amenities = {}; // displayed amenities
     let polygons = []; // displayed isochrone polygon
     let amenityData = [];
 
@@ -55,7 +55,7 @@
             for (let i in amenities) {
                 amenities[i].remove();
             }
-            amenities = [];
+            amenities = {};
             map.panTo([selected_lat, selected_lon]);
             if (!marker) {
                 marker = L.marker([selected_lat, selected_lon]).addTo(map);
@@ -87,7 +87,7 @@
                     .addTo(map)
                     .bindPopup(data.amenities[i].name);
                 // add marker to list
-                amenities.push(a);
+                amenities[data.amenities[i].fileName] = a;
                 // if the amenity is not in reach, add it to the list of far amenities
                 if (!is_in_polygon([data.amenities[i].y, data.amenities[i].x], data.isochrone)) {
                     far.push(data.amenities[i]);
@@ -114,6 +114,13 @@
             };
         }
 
+        function highlight_amenity(amenity_type) {
+            let icon = amenities[amenity_type].getIcon();
+            icon.iconSize = [100, 100];
+            icon.iconAnchor = [50, 50];
+            amenities[amenity_type].setIcon(icon);
+        }
+
         // select point on click
         map.on('click', e => {
             if (
@@ -128,6 +135,7 @@
             selected_lat = e.latlng.lat;
             selected_lon = e.latlng.lng;
             run();
+            highlight_amenity('bar');
         });
     });
 
