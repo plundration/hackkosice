@@ -11,6 +11,7 @@
     import Layout from '$/routes/+layout.svelte';
     import { listen } from 'svelte/internal';
     import {is_in_polygon} from '$/lib/util';
+    import Button from '$/components/Button.svelte';
     
     let mapElement; // html element of the map
     let map; // map object
@@ -22,6 +23,11 @@
     // lat and lon can come from the URL, if provided
     export let selected_lat;
     export let selected_lon;
+
+    let setBike = () => {};
+    let setFootWalking = () => {};
+
+    let mode = "foot-walking";
 
     onMount(async () => {
         if (!browser) return;
@@ -89,6 +95,15 @@
             if (polygon) polygon.remove();
             // create new isochrone polygon
             polygon = L.polygon(data.isochrone).addTo(map);
+
+            setFootWalking = () => {
+                mode = "foot-walking";
+                run();
+            };
+            setBike = () => {
+                mode = "cycling-regular";
+                run();
+            };
         }
 
         // select point on click
@@ -114,10 +129,18 @@
             map.remove();
         }
     });
+
+    
 </script>
 
 <div class="map">
-    <div class="main_map" bind:this={mapElement} />
+    <div class="main_map">
+        <div bind:this={mapElement} />
+        <div class="button_container">
+            <Button onClick={setFootWalking}>𓏎</Button>
+            <Button onClick={setBike}>🚲</Button>
+        </div>
+    </div>
     <div class="sidebar">
         <InfoPane {amenityData}/>
     </div>
@@ -133,7 +156,7 @@
         }
     }
 
-    .map div:not(.sidebar, .sidebar *),
+    .map div:not(.sidebar, .sidebar *, .button_container),
     .map {
         height: 100%;
     }
@@ -146,6 +169,10 @@
 
     .map .main_map {
         flex-grow: 1;
+    }
+
+    .main_map {
+        position: relative;
     }
 
     :global {
@@ -188,5 +215,17 @@
             border-radius: 1em 1em 0 0;
             height: 100%;
         }
+    }
+
+    .button_container {
+        right: 1rem;
+        top: 1rem;
+        position: absolute;
+        z-index: 10000;
+    }
+
+    .button_container > Button {
+        width: 3rem;
+        height: 3rem;
     }
 </style>
