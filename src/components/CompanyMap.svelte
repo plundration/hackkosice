@@ -72,7 +72,7 @@
                 });
             }
         }
-        heatmapLayer.setData({ max: 10000, data: data });
+        heatmapLayer.setData({ max: 100, data: data });
 
         for (let i in isochrone_polygons) {
             isochrone_polygons[i].remove();
