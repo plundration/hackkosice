@@ -34,8 +34,11 @@ function convert(file_in, file_out) {
 
   for (let y in a) {
     for (let x in a[y]) {
-      a[y][x] = ((((people[y][x]) / (a[y][x]+1)))**2/ 20000);
-      if (!a[y][x]) a[y][x] = 0;
+      //a[y][x] = ((((people[y][x]) / (a[y][x]+1)))**2/ 20000);
+      //if (!a[y][x]) a[y][x] = 0;
+      if (!a[y][x]) {
+        a[y][x] = people[y][x]/20;
+      }
     }
   }
 

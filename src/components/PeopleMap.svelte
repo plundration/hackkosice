@@ -153,7 +153,7 @@
     <div class="main_map">
         <div bind:this={mapElement} />
         <div class="button_container">
-            <Button onClick={setFootWalking}>𓏎</Button>
+            <Button onClick={setFootWalking}>🚶‍♂️</Button>
             <Button onClick={setBike}>🚲</Button>
         </div>
     </div>
@@ -243,5 +243,6 @@
     .button_container > Button {
         width: 3rem;
         height: 3rem;
+        background-color: $clr-ludia;
     }
 </style>
