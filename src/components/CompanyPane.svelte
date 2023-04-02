@@ -121,6 +121,6 @@
     }
 
     p {
-        line-height: ;
+        line-height: 1.2;
     }
 </style>
