@@ -130,7 +130,7 @@
         }
     });
 
-    
+
 </script>
 
 <div class="map">
@@ -142,7 +142,7 @@
         </div>
     </div>
     <div class="sidebar">
-        <InfoPane {amenityData}/>
+        <InfoPane {amenityData} />
     </div>
 </div>
 

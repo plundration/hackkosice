@@ -7,7 +7,7 @@
         features,
         icon_sources,
     } from '$/lib/map';
-    import InfoPane from '$/components/InfoPane.svelte';
+    import CompanyPane from '$/components/CompanyPane.svelte';
     import Layout from '$/routes/+layout.svelte';
 
     // html element of the map
@@ -15,35 +15,37 @@
     // map object
     let map;
 
+    let amenity_selected = amenity_type => {};
+
     onMount(async () => {
         if (!browser) return;
 
         var baseLayer = L.tileLayer(
-        'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-            attribution: '...',
-            maxZoom: 18
-        }
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            {
+                attribution: '...',
+                maxZoom: 18,
+            }
         );
 
         var cfg = {
             // radius should be small ONLY if scaleRadius is true (or small radius is intended)
             // if scaleRadius is false it will be the constant radius used in pixels
-            "radius": 0.01,
-            "maxOpacity": .7,
+            radius: 0.01,
+            maxOpacity: 0.7,
             // scales the radius based on map zoom
-            "scaleRadius": true,
+            scaleRadius: true,
             // if set to false the heatmap uses the global maximum for colorization
             // if activated: uses the data maximum within the current map boundaries
             //   (there will always be a red spot with useLocalExtremas true)
-            "useLocalExtrema": false,
+            useLocalExtrema: false,
             // which field name in your data represents the latitude - default "lat"
             latField: 'y',
             // which field name in your data represents the longitude - default "lng"
             lngField: 'x',
             // which field name in your data represents the data value - default "value"
-            valueField: 'value'
+            valueField: 'value',
         };
-
 
         var heatmapLayer = new HeatmapOverlay(cfg);
 
@@ -60,20 +62,27 @@
                 }
             )
             .addTo(map);
-        
+
         heatmapLayer.addTo(map);
-        
-        let resp = await (await fetch("/firmy")).json();
+
+        let resp = await (await fetch('/firmy')).json();
         console.log(resp);
         let data = [];
         for (let y in resp) {
             for (let x in resp[y]) {
                 console.log(y, x);
-                data.push({x: 21.1 + x * 0.01, y: 48.5 + y * 0.01, value: resp[y][x]});
+                data.push({
+                    x: 21.1 + x * 0.01,
+                    y: 48.5 + y * 0.01,
+                    value: resp[y][x],
+                });
             }
         }
-        heatmapLayer.setData({max: 10000, data: data});
+        heatmapLayer.setData({ max: 10000, data: data });
 
+        amenity_selected = amenity_type => {
+            console.log(amenity_type);
+        };
     });
 
     onDestroy(async () => {
@@ -82,12 +91,13 @@
             map.remove();
         }
     });
-    //<InfoPane data={placeData} />
 </script>
 
 <div class="map">
     <div class="main_map" bind:this={mapElement} />
-    <div class="sidebar" />
+    <div class="sidebar">
+        <CompanyPane onSelect={amenity_selected} />
+    </div>
 </div>
 
 <style lang="scss">
