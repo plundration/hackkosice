@@ -3,7 +3,7 @@
 </script>
 
 <div class="info-pane">
-    {#if amenityData}
+    {#if amenityData.length > 0}
         <div class="grid">
             {#each amenityData as amenity}
                 <div class={amenity.time < 5 ? 'green' : amenity.time < 10 ? 'yellow' : 'red'}>
@@ -13,8 +13,21 @@
             {/each}
         </div>
     {:else}
-        <h1>Vyberte miesto</h1>
-        <p>Kliknutím si vyberte miesto o ktorom sa chcete dozvedieť viac</p>
+        <h1>Kliknite na mapu</h1>
+        <p>
+            Práve vidíte časti mesta, z ktorých sa za <b>15 minút</b> viete
+            <b>pešo</b>
+            dostať ku <b>všetkým denným potrebám a službám</b>
+        </p>
+        <p>Tieto potreby sú:</p>
+        <ul>
+            <li>Vzdelanie</li>
+            <li>Zdravotná starostlivosť</li>
+            <li>Lekárne</li>
+            <li>Prístup k obchodom</li>
+            <li>Zeleň</li>
+            <li>Ihriská</li>
+        </ul>
     {/if}
 </div>
 
