@@ -93,8 +93,8 @@
                     far.push(data.amenities[i]);
                 }
             }
-
-            console.log(far);
+            
+            console.log(amenities);
 
             for (let i in polygons) {
                 polygons[i].remove();
