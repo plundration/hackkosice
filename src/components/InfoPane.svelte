@@ -1,12 +1,17 @@
 <script lang="ts">
     export let amenityData;
+    export let hoveredAmenity = null;
 </script>
 
 <div class="info-pane">
     {#if amenityData.length > 0}
         <div class="grid">
             {#each amenityData as amenity}
-                <div class={amenity.time < 5 ? 'green' : amenity.time < 10 ? 'yellow' : 'red'}>
+                <div
+                    class={amenity.time < 5 ? 'green' : amenity.time < 10 ? 'yellow' : 'red'}
+                    on:mouseenter={() => { hoveredAmenity = amenity.fileName; console.log('enter') }}
+                    on:mouseleave={() => { hoveredAmenity = null; console.log('leave') }}
+                >
                     <img src={'amenity_icons/' + amenity.fileName + '.svg'} />
                     <p>{amenity.time} min</p>
                 </div>

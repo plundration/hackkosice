@@ -240,9 +240,11 @@
         z-index: 10000;
     }
 
-    .button_container :global(Button) {
-        background-color: $clr-ludia;
+    .button_container > :global(Button) {
         width: 3rem;
         height: 3rem;
+        background-color: $clr-light;
+        border: $clr-ludia 2px solid;
+        padding: 0.3em;
     }
 </style>

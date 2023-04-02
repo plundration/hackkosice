@@ -5,7 +5,6 @@
     export const amenityTypes = [
         { name: 'Supermarket', file: 'supermarket' },
         { name: 'Reštaurácia', file: 'restauracia' },
-        { name: 'Zastávka', file: 'zastavka' },
         { name: 'Kaviareň', file: 'kaviaren' },
         { name: 'Krčma', file: 'krcma' },
         { name: 'Ambulancia', file: 'ambulancia' },
@@ -13,7 +12,6 @@
         { name: 'Detská ambulancia', file: 'detska_ambulancia' },
         { name: 'Ihrisko', file: 'ihrisko' },
         { name: 'Drogéria', file: 'drogeria' },
-        { name: 'Fastfood', file: 'fastfood' },
         { name: 'Gym', file: 'gym' },
         { name: 'Lekáreň', file: 'lekaren' },
         { name: 'Zubár', file: 'zubar' },
