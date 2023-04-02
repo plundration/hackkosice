@@ -24,6 +24,11 @@
 </script>
 
 <div class="info-pane">
+    <div style="padding-bottom: 1em">
+        <h2>Chcete nájsť optimálnu lokalitu na podnikanie v Košiciach?</h2>
+        <p style="padding: 1em 0"> S nami dokážete optimalizovať <b>dopyt</b> o vaše služby. </p>
+        <p> Mapa zobrazuje miesta s najväčším predpokladaným dopytom, vybrané podľa časovej dostupnosti obyvateľstva a jeho hustoty. </p>
+    </div>
     <div class="list">
         {#each amenityTypes as type}
             <div
@@ -113,5 +118,9 @@
         display: flex;
         align-items: center;
         padding-left: 1em;
+    }
+
+    p {
+        line-height: 1.2;
     }
 </style>
