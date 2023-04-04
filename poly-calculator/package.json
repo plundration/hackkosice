@@ -1,0 +1,17 @@
+{
+  "name": "martinez",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "martinez-polygon-clipping": "github:w8r/martinez",
+    "polygon-clipping": "^0.15.3"
+  }
+}

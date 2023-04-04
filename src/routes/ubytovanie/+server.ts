@@ -52,14 +52,14 @@ export const GET: RequestHandler = async ({ request, url }) => {
         const travelTime = Math.max(Math.round(closestDistance * timeMultiplier * 0.7 / 60), 1);
         closestAmenities.push({ name: closest.name, x: closest.x, y: closest.y, dist: closestDistance, generalName: amenityTypes[key].name, fileName: amenityTypes[key].file, time: travelTime });
     }
-
+    
     /*
-        const apiUrl = `http://localhost:8080/ors/v2/matrix/${mode}`;
+    const apiUrl = 'http://localhost:8080/ors/v2/matrix/foot-walking';
     const destinations = closestAmenities.map(a => [parseFloat(a.x.toString()), parseFloat(a.y.toString())]);
     const req = {
-        locations: [[lon, lat], ...destinations], sources: [0], metrics: ['duration']
+        locations: [[lon, lat], ...destinations], sources: [0], metrics: ['distance'], units: 'm'
     };
-    
+
     console.log(req);
 
     const response = await fetch(apiUrl, {
@@ -70,10 +70,7 @@ export const GET: RequestHandler = async ({ request, url }) => {
 
     const j = await response.json();
     console.log(j);
-
-
     */
-
 
     return json({
         isochrone: await getIsochrone({ lat, lon }, mode, time),
